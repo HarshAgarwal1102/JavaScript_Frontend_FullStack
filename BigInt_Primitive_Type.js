@@ -82,11 +82,3 @@ salaries instanceof Array;
 true
 typeof Array;
 'function'
-salaries = null;
-null
-salaries;
-null
-typeof salaries
-'object'
-typeof null;
-'object'
