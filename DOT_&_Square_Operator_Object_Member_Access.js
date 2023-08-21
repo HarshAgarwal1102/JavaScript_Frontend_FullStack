@@ -1,5 +1,4 @@
 DOT Operator we can access only String Key
-
 [] Operator we can access String Key, Numeric Key, Special Key, Dynamic Key
 
 var emp = {id:1001, name:'Ram'};
