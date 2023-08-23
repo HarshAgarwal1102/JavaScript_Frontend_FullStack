@@ -68,3 +68,48 @@ function output(){
 undefined
 output()['x'];
 10
+
+
+// 1st Named function / Simple Function.
+
+// JS is a compiled language, Compilation uses the Principle of Hoisting.
+// Hoisting - Place declaration at the Top(Window(root) Object).
+show(); // Call
+function show(){ // Define
+    console.log(" I am the Show ");
+}
+VM108:3  I am the Show 
+undefined
+window.show;
+ƒ show(){ // Define
+    console.log(" I am the Show ");
+}
+window.show();
+VM108:3  I am the Show 
+undefined
+show();   // basically it is window.show();
+VM108:3  I am the Show 
+undefined
+
+
+// 2nd Anonymous function / Function Expression / UnNamed Function.
+
+var z = function(){
+    console.log("I am the Anonymous Function ");
+}
+undefined
+typeof z;
+'function'
+z();
+VM312:2 I am the Anonymous Function 
+undefined
+
+m(); 
+var m = function(){
+    console.log("I am the Function Expression");
+}
+VM442:1 Uncaught TypeError: m is not a function   // because only declaration is there instead of assigning
+    at <anonymous>:1:1
+(anonymous) @ VM442:1
+m;
+undefined
