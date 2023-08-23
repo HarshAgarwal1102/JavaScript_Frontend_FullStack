@@ -8,26 +8,29 @@ console.log(z);
 VM222:5 30
 undefined
 function test(){
-    return 10,20;
+    return 10,20;    // function will never return 2 values, so it will return the last value.
 }
 undefined
 test();
-20
+20      // last value is returned from the function.
+
 function disp(){
-    return [10,20,30];
+    return [10,20,30];  // here function returns all of the elements in the form of a single array.
 }
 var m = disp();
 undefined
 m;
 (3) [10, 20, 30]
+
 function output(){
-    return {x:10, y:20, z:30};
+    return {x:10, y:20, z:30};  // here function returns all of the elements in the form of an Object.
 }
 undefined
 var g = output();
 undefined
 g;
 {x: 10, y: 20, z: 30}
+
 function add(){
     return function adder(){
         console.log("I am the Adder ");
