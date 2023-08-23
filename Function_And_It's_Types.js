@@ -15,7 +15,7 @@ test();
 20      // last value is returned from the function.
 
 function disp(){
-    return [10,20,30];  // here function returns all of the elements in the form of a single array.
+    return [10,20,30];  // here function returns all of the elements in the form of a single reference.
 }
 var m = disp();
 undefined
