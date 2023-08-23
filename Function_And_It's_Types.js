@@ -23,7 +23,7 @@ m;
 (3) [10, 20, 30]
 
 function output(){
-    return {x:10, y:20, z:30};  // here function returns all of the elements in the form of an Object.
+    return {x:10, y:20, z:30};  // here function returns all of the elements in the form reference of an Object.
 }
 undefined
 var g = output();
