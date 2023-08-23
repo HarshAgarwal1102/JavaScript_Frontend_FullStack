@@ -113,3 +113,94 @@ VM442:1 Uncaught TypeError: m is not a function   // because only declaration is
 (anonymous) @ VM442:1
 m;
 undefined
+
+
+// 3rd Named Function.
+
+// NFE
+undefined
+function add(){
+    console.log("Customer Add ");
+}
+undefined
+window.add();
+VM105:2 Customer Add 
+undefined
+function add(){
+    console.log("Math add ");
+}
+undefined
+window.add(); // Override
+VM214:2 Math add 
+undefined
+function show(){
+var x = 10;
+    var x =20;
+    if(x>1){
+        var x = 30;
+    }
+    console.log(x);  
+}
+undefined
+show();  // Override the values
+VM371:7 30
+undefined
+function calc(){
+    var add = function(x,y){
+        return x + y;
+    }
+    var sub = function(x,y){
+        return x - y;
+    }
+    return [add, sub];
+}
+undefined
+var arr = calc();
+undefined
+arr;
+(2) [ƒ, ƒ]
+arr[0](10,20);
+30
+arr[1](10,20);
+-10
+add();
+VM214:2 Math add 
+undefined
+arr[0](10,20);
+30
+function calc(){
+    var add = function adder(x,y){
+        return x + y;
+    }
+    var sub = function subtract(x,y){
+        return x - y;
+    }
+    return [add, sub];
+}
+undefined
+calc();
+(2) [ƒ, ƒ]0: ƒ adder(x,y)1: ƒ subtract(x,y)length: 2[[Prototype]]: Array(0)
+calc()[0](10,20);
+30
+calc()[1](10,20);
+-10
+function calc(){
+    var add = function (x,y){
+        return x + y;
+    }
+    var sub = function (x,y){
+        return x - y;
+    }
+    return {add, sub};
+}
+undefined
+var t = calc();
+undefined
+typeof t;
+'object'
+t;
+{add: ƒ, sub: ƒ}
+t.add(10,20);
+30
+t.sub(10,20);
+-10
