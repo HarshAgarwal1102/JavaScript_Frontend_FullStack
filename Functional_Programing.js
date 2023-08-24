@@ -5,6 +5,12 @@
 //     c) Function as a data type
 //     d) Nested Function
 // 2. Declarative Programming vs Imperative Programming 
+// 3. Pure Functions
+//      -> Arrow Functions (No Arguments, No this keyword)
+//     a) Easy to Write
+//     b) Easy to Understand
+//     c) Easy to Debug
+
 
 // Receiving function as a parameter
 function show(calCube){
@@ -49,3 +55,31 @@ f              // function as a data type
     }
 f(10, 20);
 30
+
+
+// Imperative Programming (Normally we do it on a daily basis...)
+
+var arr = [10, 20, 40, 30, 40, 50, 60, 40];
+undefined
+var search = 40;
+undefined
+var arr2 = [];
+undefined
+for(var i=0; i<arr.length; i++){
+    if(arr[i] == search){
+        arr2.push(arr[i]);
+    }
+}
+3
+arr2
+(3) [40, 40, 40]
+arr2.length
+3
+
+// Declarative Programming
+arr.filter((e)=>e==40);  // Pure func" (Arrow Functions) contains No Arguments, No this keyword
+(3) [40, 40, 40]
+var g = arr.filter((e)=>e==40);
+undefined
+g.length
+3
