@@ -77,9 +77,15 @@ arr2.length
 3
 
 // Declarative Programming
+// if you want to store multiple records we can use filter method.
 arr.filter((e)=>e==40);  // Pure func" (Arrow Functions) contains No Arguments, No this keyword
 (3) [40, 40, 40]
 var g = arr.filter((e)=>e==40);
 undefined
 g.length
 3
+// if you want to store a single record we can use find method.
+var c = arr.find((e)=>e==10);
+undefined
+c.length
+1
