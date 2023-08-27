@@ -1,5 +1,5 @@
 // Array Creation Ways
-undefined
+
 var arr = [10,20,1,2,90,33, 88];
 undefined
 var arr2= new Array(10);
