@@ -38,6 +38,22 @@ arr.splice(0);  // will delete all elements at starting index 0.
 arr;  // result
 []
 
+var arr = [1, 10, 2, 20, 33, 88, 90];
+undefined
+arr.splice(1,0);   // from index 1 delete 0 elements
+[]
+arr;
+(7) [1, 10, 2, 20, 33, 88, 90]    // result
+
+arr.splice(1,1);   // from index 1 delete 1 element
+[10]
+arr;
+(6) [1, 2, 20, 33, 88, 90]    // result
+
+arr.splice(1,10000);     // from index 1 delete 10000 elements
+(5) [2, 20, 33, 88, 90]
+arr;
+[1]    // result
 
 var arr = [10,20,1,2,90,33, 88];
 undefined
@@ -53,7 +69,7 @@ arr;
 arr;
 (8) [10, 1000, 20, 1, 2, 90, 33, 88]
 
-arr.splice(1,1,9000);  // go to index 1, delete that element and push 9000 there.
+arr.splice(1,1,9000);  // go to index 1, delete 1 element and push 9000 there.
 [1000]
 arr;
 (8) [10, 9000, 20, 1, 2, 90, 33, 88]
