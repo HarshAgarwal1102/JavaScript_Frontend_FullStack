@@ -2,7 +2,7 @@
     "Vegetarian": [
          {
         "id": 100,
-        "name": "Vegan Veggie",
+        "name": "Veg Deluxe",
         "price": "23.95",
         "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
         "classifications": {
@@ -16,7 +16,7 @@
           ],
           "product_details_page": [
             {
-              "url": "https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg"
+              "url": "https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg.transform/schema-16x9/image.jpg"
             }
           ]
         },
@@ -177,8 +177,8 @@
       }
         ,
       {
-        "id": 10,
-        "name": "Vegan Veggie",
+        "id": 1000,
+        "name": "Vegan Pizza",
         "price": "23.95",
         "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
         "classifications": {
@@ -192,7 +192,7 @@
           ],
           "product_details_page": [
             {
-              "url": "https://img.freepik.com/free-photo/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.jpg"
+              "url": "https://img.freepik.com/free-photo/side-view-pizza-with-salami-ham-green-peppers-tomatoes-black-olives-cheese-table_141793-2996.jpg"
             }
           ]
         },
@@ -374,7 +374,7 @@
           ],
           "product_details_page": [
             {
-              "url": "https://img.freepik.com/free-photo/freshly-italian-pizza-with-mozzarella-cheese-slice-generative-ai_188544-12347.jpg"
+              "url": "https://thumbs.dreamstime.com/b/pizza-rustic-italian-mozzarella-cheese-basil-leaves-35669930.jpg"
             }
           ]
         },
