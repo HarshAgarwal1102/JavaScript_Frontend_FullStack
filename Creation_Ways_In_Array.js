@@ -1,16 +1,20 @@
 // Array Creation Ways
 
-var arr = [10,20,1,2,90,33, 88];
+var arr = [10,20,1,2,90,33, 88];   // Array Literal
 undefined
-var arr2= new Array(10);
+
+var arr2= new Array(10);   // By creating the Object of an Array
 undefined
+
 arr;
 (7) [10, 20, 1, 2, 90, 33, 88]
+
 arr2;
 (10) [empty × 10]
 arr2.length;
 10
-var arr3 = new Array(100);
+
+var arr3 = new Array(100);   // By creating the Object of an Array
 undefined
 var g = Array.of(10,20,30,40);
 undefined
