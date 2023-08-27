@@ -16,21 +16,26 @@ arr2.length;
 
 var arr3 = new Array(100);   // By creating the Object of an Array
 undefined
-var g = Array.of(10,20,30,40);
+
+
+var g = Array.of(10,20,30,40);   // Array Creation using Array.of function
 undefined
 g;
 (4) [10, 20, 30, 40]
+
 arr3;
 (100) [empty × 100]
-arr3.fill(1,0,arr3.length);
+arr3.fill(1, 0, arr3.length);   // fill value 1 from index 0 to length.
 (100) [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-var arr4 = Array.from(arr);
+
+var arr4 = Array.from(arr);  // creating a clone
 undefined
 arr4;
 (7) [10, 20, 1, 2, 90, 33, 88]
-arr4 === arr;
+arr4 === arr;  // reference is different
 false
-var g = [...arr];
+
+var g = [...arr];   // cloning by spread operator
 undefined
 g;
 (7) [10, 20, 1, 2, 90, 33, 88]
