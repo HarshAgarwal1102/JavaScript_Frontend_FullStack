@@ -51,3 +51,34 @@ m;
 console.dir(m);
 VM422:1 ƒ c(z)arguments: nullcaller: nulllength: 1name: "c"prototype: {constructor: ƒ}[[FunctionLocation]]: VM271:4[[Prototype]]: ƒ ()[[Scopes]]: Scopes[3]0: Closure (b) {y: 20}1: Closure (a) {x: 10}2: Global {window: Window, self: Window, document: document, name: '', location: Location, …}
 undefined
+
+function show(y){
+    var z = 100;
+    var m = 200;
+    return function(x){
+        var a = 10;
+        return a + x + y; 
+    }
+}
+undefined
+show(100);
+ƒ (x){
+        var a = 10;
+        return a + x + y; 
+    }
+var g = show(100);
+undefined
+g(1);
+111
+console.dir(g);
+VM243:1 
+   ƒ anonymous(x)arguments: null
+   caller: null
+   length: 1
+      name: ""prototype: {constructor: ƒ}
+[[FunctionLocation]]: VM141:4
+   [[Prototype]]: ƒ ()
+   [[Scopes]]: Scopes[2]
+   0: Closure (show) {y: 100}
+1: Global {window: Window, self: Window, document: document, name: '', location: Location, …}
+undefined
