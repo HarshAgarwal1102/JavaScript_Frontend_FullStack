@@ -10,9 +10,10 @@ typeof(json);
 undefined
 JSON.parse(json);
 {id: 1001, name: 'Rohit'}
-//JSON to object - method is parse
-//Object to JSON - method is stringify
-undefined
+
+//JSON to object - method is parse (Serialisation)
+//Object to JSON - method is stringify   (De-Serialisation)
+
 var jsonn = JSON.stringify(emp);
 undefined
 jsonn;
