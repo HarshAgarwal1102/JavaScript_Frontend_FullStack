@@ -42,10 +42,10 @@ cube(3);    // this will take time to print the result bcz it's printing 1st tim
 27
 Window {window: Window, self: Window, document: document, name: '', location: Location, …}
 
-cache;     // data in cache memory.
+cache;     
 {3: 27}
 
-cube(3);   // this won't take time to print the result bcz this data was stored in cache memory.
+cube(3);   // instead of computing the result again, it returns the cached result.
 27
 
 cube(5);  // this will take time to print the result bcz it's printing 1st time
@@ -54,5 +54,5 @@ cube(5);  // this will take time to print the result bcz it's printing 1st time
 cache;    // data in cache memory.
 {3: 27, 5: 125}
 
-cube(5);   // this won't take time to print the result bcz this data was stored in cache memory.
+cube(5);   // instead of computing the result again, it returns the cached result.
 125
