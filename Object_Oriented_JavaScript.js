@@ -21,7 +21,7 @@ undefined
 var emp2 = {id:1002, name:'Vim'};
 undefined
 function createEmp(id, name){
-    var e = {};
+    var e = {};     // Object Literal
     e.id = id;
     e.name = name;
     return e;
@@ -33,24 +33,25 @@ createEmp(1002, 'Mohan');
 {id: 1002, name: 'Mohan'}
 var mohan = createEmp(1002, 'Mohan');
 undefined
-mohan instanceof createEmp;
-false
+mohan instanceof createEmp;      // because we have created the object using {} Object Literals
+false 
 mohan instanceof Object;
 true
 typeof Object;
 'function'
+
+
+
 // Function Constructor
-undefined
+
 function Employee(id, name, salary){
     // this - keyword (Current Calling Object Reference)
-    // 99.id
     this.id = id;
     this.name = name;
     this.salary = salary;
-
-    
 }
-var emp = new Employee(1001, 'Tim',9999);
+
+var emp = new Employee(1001, 'Tim',9999);   // using new keyword
 undefined
 mohan;
 {id: 1002, name: 'Mohan'}
