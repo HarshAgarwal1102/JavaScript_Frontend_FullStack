@@ -1,5 +1,5 @@
-// OOJS
-undefined
+// OOJS (Object Oriented JavaScript)
+
 var arr = [10,20,30];
 undefined
 typeof arr;
@@ -65,6 +65,8 @@ emp instanceof Object;
 true
 mohan instanceof Object;
 true
+
+// Prototypes 
 Employee.prototype;
 {constructor: ƒ}
 Array.prototype;
@@ -81,6 +83,7 @@ typeof Array.prototype;
 'object'
 arr;
 (3) [10, 20, 30]
+
 arr.__proto__;
 [constructor: ƒ, at: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, …]
 arr.__proto__ === Array.prototype;
@@ -90,12 +93,10 @@ true
 Employee;
 ƒ Employee(id, name, salary){
     // this - keyword (Current Calling Object Reference)
-    // 99.id
+
     this.id = id;
     this.name = name;
-    this.salary = salary;
-
-    
+    this.salary = salary;  
 }
 var r = new Employee(1001, "R",9999);
 undefined
