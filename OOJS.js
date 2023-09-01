@@ -1,12 +1,12 @@
 // Generic Object
-undefined
-var obj = {id:101, name:'Ram', city:'Delhi'};
+
+var obj = {id:101, name:'Ram', city:'Delhi'};   // Object Literal
 undefined
 typeof obj;
 'object'
-obj instanceof Object;
+obj instanceof Object;      
 true
-typeof Object;
+typeof Object;   // GOD Function
 'function'
 function createEmp(id, name , salary){
     var emp = {}; // Object Literal
@@ -24,7 +24,7 @@ typeof ram;
 'object'
 ram instanceof Object;
 true
-ram instanceof createEmp;
+ram instanceof createEmp;    // not a specific object
 false
 var shyam = createEmp(1002, 'Shyam', 122222);
 undefined
@@ -34,18 +34,10 @@ var tom = createEmp(1003, 'Tom', 122222);
 undefined
 tom;
 {id: 1003, name: 'Tom', salary: 122222}
+
+
 // Specific Objects
-undefined
-function Person(id, name ,age){
-    console.log('Person ',this);
-}
-var tim = new Person(1001, 'Tim',21);
-VM960:2 Person  Person {}
-undefined
-tim instanceof Person;
-true
-tim instanceof Object;
-true
+
 // Function Constructor
 function Person(id, name ,age){
     console.log('Person ',this);
@@ -56,9 +48,15 @@ function Person(id, name ,age){
     // this - keyword - current calling object reference
 }
 var tim = new Person(1001, 'Tim',21);
-VM1185:3 Person  Person {}
-VM1185:7 Person with Values  Person {id: 1001, name: 'Tim', age: 21}
+Person  Person {}
+Person with Values  Person {id: 1001, name: 'Tim', age: 21}
 undefined
+tim instanceof Person;  // Specific Object
+true
+tim instanceof Object;
+true
+
+
 // what is prototype?
 undefined
 function Customer(id, name, balance){
