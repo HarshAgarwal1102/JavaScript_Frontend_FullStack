@@ -3,7 +3,7 @@
          {
         "id": 100,
         "name": "Veg Deluxe",
-        "price": "23.95",
+        "price": "299.50",
         "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
         "classifications": {
           "vegetarian": true
@@ -91,7 +91,7 @@
          {
         "id": 10,
         "name": "Vegan Veggie",
-        "price": "23.95",
+        "price": "179.99",
         "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
         "classifications": {
           "vegetarian": true
@@ -179,7 +179,7 @@
       {
         "id": 1000,
         "name": "Vegan Pizza",
-        "price": "23.95",
+        "price": "239.95",
         "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
         "classifications": {
           "vegetarian": true
@@ -266,7 +266,7 @@
       {
         "id": 11,
         "name": "Veggie Zupreme",
-        "price": "19.95",
+        "price": "199.95",
         "menu_description": "The freshest, locally sourced veggies",
         "classifications": {
           "vegetarian": true
@@ -361,7 +361,7 @@
       {
         "id": 12,
         "name": "The O.G.",
-        "price": "16.95",
+        "price": "169.95",
         "menu_description": "The Margherita—with California flair",
         "classifications": {
           "vegetarian": true
