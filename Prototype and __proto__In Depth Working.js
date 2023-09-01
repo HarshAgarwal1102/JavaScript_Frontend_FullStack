@@ -1,3 +1,5 @@
+<img width="1252" alt="Screenshot 2023-09-01 at 11 49 12 PM" src="https://github.com/HarshAgarwal1102/JavaScript_FullStack/assets/117922914/5d9e5bae-194b-43f5-80e3-195a9c4ea78d">
+
 function show(){
     console.log('this is ', this);
 }
