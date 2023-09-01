@@ -38,8 +38,6 @@ operationOnSum(5, 5, multiplyBy2); // Outputs 20
 
 
 
-
-
        // CALLBACK HELL
 
 // Callbacks
