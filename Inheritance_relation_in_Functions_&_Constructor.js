@@ -1,3 +1,5 @@
+// Basically in this we are doing linkaging of the objects
+
 /*
 
 Ques.
