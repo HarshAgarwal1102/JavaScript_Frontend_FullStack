@@ -4,9 +4,8 @@
 
 Ques.
 Create a Person Function , Having Id, Name, Age, City
-Create a Student Function , Having Marks, Grade, College
 Create a Employee Function. Having Salary, Bonus, CompanyName
-Make a RelationShip b/w Employee , Student and Person
+Make a RelationShip b/w Employee and Person
 BY Using proto​​ and prototype
 Hint : Use Call 
 
@@ -14,47 +13,116 @@ Think about how Chain RelationShip (Inheritance) and One Function Constructor ca
 
 */
 
-// Define the Person constructor function
 
-function Person(id, name, age, city) {
-  this.id = id;
-  this.name = name;
-  this.age = age;
-  this.city = city;
+// Person function constrcutor
+function Person(id, name, city){
+    this.id = id;
+    this.name = name;
+    this.city = city;
+}
+Person.prototype.printPersonDetails = function(){
+    console.log(`Id ${this.id} Name ${this.name} City ${this.city}`);
 }
 
-// Define the Student constructor function
-
-function Student(id, name, age, city, marks, grade, college) {
-  // Call the Person constructor to set common properties
-  Person.call(this, id, name, age, city);
-
-  this.marks = marks;
-  this.grade = grade;
-  this.college = college;
+// Employee function constructor
+function Employee(salary, bonus, dept){
+    this.salary = salary;
+    this.bonus = bonus;
+    this.dept = dept;
+}
+Employee.prototype.printEmployeeDetails = function(){
+    console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
+}
+// var amit = new Person(1001, 'Amit', 'Delhi')
+ƒ (){
+    console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
 }
 
-// Define the Employee constructor function
+typeof Person;
+'function'
+Person.prototype;
+{printPersonDetails: ƒ, constructor: ƒ}
+typeof Person.prototype;
+'object'
+typeof Employee;
+'function'
+typeof Employee.prototype;
+'object'
+Employee.prototype.__proto__ == Object.prototype;
+true
+Employee.prototype.__proto__ == Person.prototype.__proto__;
+true
+Employee.prototype.__proto__ = Person.prototype    // creating linkage.
+{printPersonDetails: ƒ, constructor: ƒ}printPersonDetails: ƒ ()constructor: ƒ Person(id, name, city)[[Prototype]]: Object
 
-function Employee(id, name, age, city, salary, bonus, companyName) {
-  // Call the Person constructor to set common properties
-  Person.call(this, id, name, age, city);
+Employee.prototype.__proto__ == Object.prototype;   // now it's pointing to Person's Prototype // Linkage created...
+false
+Employee.prototype.__proto__ == Person.prototype;
+true
 
-  this.salary = salary;
-  this.bonus = bonus;
-  this.companyName = companyName;
+// Updating employee function for creating linkage...
+function Employee(id, name, city, salary, bonus, dept){
+    // id ,name, city (Give it to the Person)
+    console.log(' this is ', this);
+    //var p = new Person()   // not using this, bcz we don't want to create new object.
+    Person.call(this, id, name, city); // bind this (Employee) with Person
+    this.salary = salary;
+    this.bonus = bonus;
+    this.dept = dept;
+}
+Employee.prototype.printEmployeeDetails = function(){
+    console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
+}
+ƒ (){
+    console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
 }
 
-// Establish the prototype chain to inherit Person's properties and methods
-Student.prototype = Object.create(Person.prototype);
+Employee.prototype.__proto__ == Person.prototype;  // linkage broken..... bcz we have updated the function..
+false
+Employee.prototype.__proto__ = Person.prototype;   // created linkage again...
+{printPersonDetails: ƒ, constructor: ƒ}
+var amit =new Employee(1001, 'amit','delhi',222222,2222,'IT');
+VM1319:3  this is  Employee {}
+undefined
+amit;  // now we are Able to access both the functions...
+Employee {id: 1001, name: 'amit', city: 'delhi', salary: 222222, bonus: 2222, …}
+amit.printEmployeeDetails();   // also able to access unique functions....
+VM1319:11 Salary 222222 Bonus 2222 Dept IT
+undefined
+amit.printPersonDetails();    // also able to access unique functions....
+VM642:8 Id 1001 Name amit City delhi
+undefined
+amit;
+Employee {id: 1001, name: 'amit', city: 'delhi', salary: 222222, bonus: 2222, …}bonus: 2222city: "delhi"dept: "IT"id: 1001name: "amit"salary: 222222[[Prototype]]: PersonprintEmployeeDetails: ƒ ()constructor: ƒ Employee(id, name, city, salary, bonus, dept)[[Prototype]]: ObjectprintPersonDetails: ƒ ()constructor: ƒ Person(id, name, city)[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: PersonprintEmployeeDetails: ƒ ()constructor: ƒ Employee(id, name, city, salary, bonus, dept)[[Prototype]]: Objectget __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
+amit;
+Employee {id: 1001, name: 'amit', city: 'delhi', salary: 222222, bonus: 2222, …}
+amit.__proto__;
+Person {printEmployeeDetails: ƒ, constructor: ƒ}
+amit.__proto__ == Employee.prototype;
+true
+amit.__proto__.__proto__ == Person.prototype;
+true
+amit.__proto__.__proto__.__proto__ == Object.prototype;
+true
+amit.__proto__.__proto__.__proto__.__proto__ == null;
+true
 
-// Establish the prototype chain to inherit Person's properties and methods
-Employee.prototype = Object.create(Person.prototype);
+amit.printEmployeeDetails();
+Salary 222222 Bonus 2222 Dept IT
+undefined
+amit.printPersonDetails();
+Id 1001 Name amit City delhi
+undefined
 
-// Now, Create instances of Student and Employee
-const student1 = new Student(1, "Alice", 20, "New York", [85, 92, 78], "A", "XYZ College");
-const employee1 = new Employee(101, "Bob", 30, "San Francisco", 60000, 5000, "ABC Inc");
+Employee.prototype.printEmployeeDetails = function(){
+    this.printPersonDetails();
+    console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
+}
+ƒ (){
+    this.printPersonDetails();
+    console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
+}
 
-// Access both Person's and Student's or Employee's properties and methods
-console.log(student1.name); // Alice
-console.log(employee1.city); // San Francisco
+amit.printEmployeeDetails();
+Id 1001 Name amit City delhi
+Salary 222222 Bonus 2222 Dept IT
