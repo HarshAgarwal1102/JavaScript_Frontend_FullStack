@@ -71,6 +71,7 @@ var myadd = (...a)=>{   // if we want to pass multiple arguments then we have to
     console.log(a.length);
 }
 undefined
+
 myadd(10,20,30,40);
 VM1320:2 4
 undefined
