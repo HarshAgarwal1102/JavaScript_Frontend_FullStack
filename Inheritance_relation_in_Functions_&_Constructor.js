@@ -143,19 +143,14 @@ Make a RelationShip b/w Employee and Person
 */
 
 // ES6 Class Style
-undefined
+
 class A{
     
 }
-undefined
+
 typeof A;
 'function'
-class Person{
-    constructor(id, name, city){
-        this.id = id:
-}
-}
-VM177:3 Uncaught SyntaxError: Unexpected token ':'
+
 class Person{
     constructor(id, name, city){
         this.id = id;
@@ -166,6 +161,7 @@ class Person{
         console.log(`Id ${this.id} Name ${this.name} City ${this.city}`);
     }
 }
+
 class Employee extends Person{
     constructor(id, name , city, salary, bonus, dept){
         super(id, name, city);
@@ -178,7 +174,7 @@ class Employee extends Person{
         console.log(`Salary ${this.salary} Bonus ${this.bonus}  Dept ${this.dept}`);
     }
 }
-undefined
+
 typeof Person;
 'function'
 typeof Employee;
@@ -194,9 +190,12 @@ undefined
 amit;
 Employee {id: 1001, name: 'amit', city: 'delhi', salary: 222222, bonus: 2222, …}
 amit.printEmployeeDetails();
-VM677:8 Id 1001 Name amit City delhi
-VM677:20 Salary 222222 Bonus 2222  Dept IT
-undefined
+ Id 1001 Name amit City delhi
+ Salary 222222 Bonus 2222  Dept IT
+
+
+
+// Extra concepts about ES6
 class Q{
     static show(){
         console.log("Q Show ");
