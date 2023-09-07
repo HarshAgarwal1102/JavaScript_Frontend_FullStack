@@ -37,10 +37,7 @@ function Employee(salary, bonus, dept){
 Employee.prototype.printEmployeeDetails = function(){
     console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
 }
-// var amit = new Person(1001, 'Amit', 'Delhi')
-ƒ (){
-    console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
-}
+
 
 typeof Person;
 'function'
@@ -51,6 +48,7 @@ typeof Employee;
 'function'
 typeof Employee.prototype;
 'object'
+
 
 Employee.prototype.__proto__ == Object.prototype;   // connected with GOD function
 true
@@ -64,11 +62,11 @@ false
 Employee.prototype.__proto__ == Person.prototype;  // Linkage created...
 true
 
+
 // Updating employee function for creating linkage...
-function Employee(id, name, city, salary, bonus, dept){
-    // id ,name, city (Give it to the Person)
+function Employee(id, name, city, salary, bonus, dept){      // id ,name, city (Give it to the Person)
     console.log(' this is ', this);
-    //var p = new Person()   // not using this, bcz we don't want to create new object.
+    //var p = new Person()   // not using this, bcz we don't want to create object of person. We wan't to call person using employee Object.
     Person.call(this, id, name, city); // bind this (Employee) with Person
     this.salary = salary;
     this.bonus = bonus;
