@@ -15,6 +15,7 @@ Think about how Chain RelationShip (Inheritance) and One Function Constructor ca
 
 
 // Person function constrcutor
+
 function Person(id, name, city){
     this.id = id;
     this.name = name;
@@ -24,7 +25,10 @@ Person.prototype.printPersonDetails = function(){
     console.log(`Id ${this.id} Name ${this.name} City ${this.city}`);
 }
 
+
+
 // Employee function constructor
+
 function Employee(salary, bonus, dept){
     this.salary = salary;
     this.bonus = bonus;
@@ -40,14 +44,14 @@ Employee.prototype.printEmployeeDetails = function(){
 
 typeof Person;
 'function'
-Person.prototype;
-{printPersonDetails: ƒ, constructor: ƒ}
 typeof Person.prototype;
 'object'
+
 typeof Employee;
 'function'
 typeof Employee.prototype;
 'object'
+
 Employee.prototype.__proto__ == Object.prototype;   // connected with GOD function
 true
 Employee.prototype.__proto__ == Person.prototype.__proto__;   // both functions are connected with GOD function
