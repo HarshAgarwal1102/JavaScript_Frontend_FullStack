@@ -48,16 +48,16 @@ typeof Employee;
 'function'
 typeof Employee.prototype;
 'object'
-Employee.prototype.__proto__ == Object.prototype;
+Employee.prototype.__proto__ == Object.prototype;   // connected with GOD function
 true
-Employee.prototype.__proto__ == Person.prototype.__proto__;
+Employee.prototype.__proto__ == Person.prototype.__proto__;   // both functions are connected with GOD function
 true
 Employee.prototype.__proto__ = Person.prototype    // creating linkage.
 {printPersonDetails: ƒ, constructor: ƒ}printPersonDetails: ƒ ()constructor: ƒ Person(id, name, city)[[Prototype]]: Object
 
-Employee.prototype.__proto__ == Object.prototype;   // now it's pointing to Person's Prototype // Linkage created...
+Employee.prototype.__proto__ == Object.prototype;   // now it's pointing to Person's Prototype instead of GOD function.
 false
-Employee.prototype.__proto__ == Person.prototype;
+Employee.prototype.__proto__ == Person.prototype;  // Linkage created...
 true
 
 // Updating employee function for creating linkage...
