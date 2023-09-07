@@ -26,7 +26,6 @@ Person.prototype.printPersonDetails = function(){
 }
 
 
-
 // Employee function constructor
 
 function Employee(salary, bonus, dept){
@@ -75,14 +74,14 @@ function Employee(id, name, city, salary, bonus, dept){      // id ,name, city (
 Employee.prototype.printEmployeeDetails = function(){
     console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
 }
-ƒ (){
-    console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
-}
 
 Employee.prototype.__proto__ == Person.prototype;  // linkage broken..... bcz we have updated the function..
 false
-Employee.prototype.__proto__ = Person.prototype;   // created linkage again...
+Employee.prototype.__proto__ = Person.prototype;   // creating linkage again...
 {printPersonDetails: ƒ, constructor: ƒ}
+Employee.prototype.__proto__ == Person.prototype;  // Linkage created...
+true
+
 var amit =new Employee(1001, 'amit','delhi',222222,2222,'IT');
 VM1319:3  this is  Employee {}
 undefined
@@ -95,11 +94,10 @@ amit.printPersonDetails();    // also able to access unique functions....
 VM642:8 Id 1001 Name amit City delhi
 undefined
 amit;
-Employee {id: 1001, name: 'amit', city: 'delhi', salary: 222222, bonus: 2222, …}bonus: 2222city: "delhi"dept: "IT"id: 1001name: "amit"salary: 222222[[Prototype]]: PersonprintEmployeeDetails: ƒ ()constructor: ƒ Employee(id, name, city, salary, bonus, dept)[[Prototype]]: ObjectprintPersonDetails: ƒ ()constructor: ƒ Person(id, name, city)[[Prototype]]: Objectconstructor: ƒ Object()hasOwnProperty: ƒ hasOwnProperty()isPrototypeOf: ƒ isPrototypeOf()propertyIsEnumerable: ƒ propertyIsEnumerable()toLocaleString: ƒ toLocaleString()toString: ƒ toString()valueOf: ƒ valueOf()__defineGetter__: ƒ __defineGetter__()__defineSetter__: ƒ __defineSetter__()__lookupGetter__: ƒ __lookupGetter__()__lookupSetter__: ƒ __lookupSetter__()__proto__: PersonprintEmployeeDetails: ƒ ()constructor: ƒ Employee(id, name, city, salary, bonus, dept)[[Prototype]]: Objectget __proto__: ƒ __proto__()set __proto__: ƒ __proto__()
-amit;
 Employee {id: 1001, name: 'amit', city: 'delhi', salary: 222222, bonus: 2222, …}
-amit.__proto__;
-Person {printEmployeeDetails: ƒ, constructor: ƒ}
+
+
+// chaining behind the scene..
 amit.__proto__ == Employee.prototype;
 true
 amit.__proto__.__proto__ == Person.prototype;
@@ -109,6 +107,8 @@ true
 amit.__proto__.__proto__.__proto__.__proto__ == null;
 true
 
+
+// Problem is that we have to call both the functions...
 amit.printEmployeeDetails();
 Salary 222222 Bonus 2222 Dept IT
 undefined
@@ -116,11 +116,9 @@ amit.printPersonDetails();
 Id 1001 Name amit City delhi
 undefined
 
+
+// Resolving issue...
 Employee.prototype.printEmployeeDetails = function(){
-    this.printPersonDetails();
-    console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
-}
-ƒ (){
     this.printPersonDetails();
     console.log(`Salary ${this.salary} Bonus ${this.bonus} Dept ${this.dept}`);
 }
