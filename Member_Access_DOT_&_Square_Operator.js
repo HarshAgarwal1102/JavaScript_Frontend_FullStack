@@ -70,9 +70,9 @@ VM757:1 Uncaught SyntaxError: Unexpected string
 
 var key = "age";
 undefined
-msdhoni.key; // can't able to access using DOT Operator
+msdhoni.key; // can't able to access using DOT Operator   // this will directly lookup for key...
 undefined
-msdhoni[key]; // Able to access using [] Operator
+msdhoni[key]; // Able to access using [] Operator    // this will first evaluate key...
 42
 
 
@@ -120,7 +120,7 @@ dhoni['full address'];
 
 var r = 'id';
 undefined
-dhoni.r;
+dhoni.r;          // this will directly lookup for r...
 undefined
-dhoni[r];
+dhoni[r];         // this will first evaluate r...
 7
