@@ -53,23 +53,26 @@ true  + false;
 100 + true;
 101
 
-// more on String_Interpolation
+
+
+// More on String_Interpolation
+
+// Real life example and advantage...
+// when we want to give multiline output with changing values.... as we can't do this thing easily with ""
+
 var candidateName = 'Ram';
 var profile = 'SE';
 var offerLetter = `Dear ${candidateName}, 
 Your Job is Confirmed for ${profile}`;
 undefined
-offerLetter;
-'Dear Ram, \nYour Job is Confirmed for SE'
 console.log(offerLetter);
-VM237:1 Dear Ram, 
+Dear Ram, 
 Your Job is Confirmed for SE
 undefined
 candidateName = 'Shyam';
 'Shyam'
 profile = 'DevOps';
 'DevOps'
-
 var offerLetter = `Dear ${candidateName}, 
 Your Job is Confirmed for ${profile}`;
 undefined
