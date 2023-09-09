@@ -1,5 +1,12 @@
-// Clone an Array
-// 4 ways to create a clone
+/*
+Clone an Array
+ 4 ways to create a clone
+  1. Spread Operator
+  2. Filter
+  3. Map
+  4. Array.from
+*/
+
 
 //Using the spread operator we can make a clone of an array
 var arr = [10, 20, 30, 40, 50, 60];
