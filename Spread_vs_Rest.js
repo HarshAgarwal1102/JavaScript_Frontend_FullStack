@@ -24,23 +24,28 @@ var emp  = {id:1001, name:'Ram', salary:10000};
 undefined
 var dept = {id:1, name:'IT'};
 undefined
-var empdept = {emp, dept}; // this is an Object Short Hand in Echma Script 2015 onwards (ES6). Here, emp & dep is key, their address is values
+
+// Object Short Hand in Echma Script 2015 onwards (ES6).
+var empdept = {emp, dept};          // Here, emp & dep is key, their address is values
 undefined
 empdept;
 {emp: {…}, dept: {…}}
   dept: {id: 1, name: 'IT'}
   emp: {id: 1001, name: 'Ram', salary: 10000}
   [[Prototype]]: Object
-empdept.emp.id; // nested object access 
+
+empdept.emp.id;           // nested object access 
 1001
 empdept.dept.id;
 1
 
 // Spread Operator
-var empdeptobj = {...emp, ...dept}; // this will copy last updates values into new Object
+var empdeptobj = {...emp, ...dept};        // this will copy last updates values into new Object
 undefined
 empdeptobj;
-{id: 1, name: 'IT', salary: 10000}  // These are the copied values
+{id: 1, name: 'IT', salary: 10000}     // These are the copied values
+
+// Side effect of not using Spread Operator...
 arr;
 (3) [10, 20, 30]
 arr2;
@@ -52,7 +57,6 @@ arr3;
   length: 2
   [[Prototype]]: Array(0)
 
-
 // this is how we are treating mutable as immutable
 arr3[0][0] ;
 10
@@ -62,13 +66,14 @@ arr3[0][0] ;
 1000
 arr;
 (3) [1000, 20, 30]
-arr4;
+
+arr4;     // this won't change bcz this is the copy.
 (6) [10, 20, 30, 100, 200, 300]
-arr4[1]=2000;
+arr4[1]=2000;    // If we change any value in copy object then won't effect original one
 2000
 arr4;
 (6) [10, 2000, 30, 100, 200, 300]
-arr;
+arr;     // original array won't changed.
 (3) [1000, 20, 30]
 
 
