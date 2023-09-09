@@ -1,5 +1,6 @@
-// 1st Method
-var obj = {x:10, y:20}; // Object Literal
+// 1st Method using Object Literal
+
+var obj = {x:10, y:20};         // Object Literal
 undefined
 typeof obj;
 'object'
@@ -18,7 +19,10 @@ obj.x = 90;
 obj;
 {x: 90, y: 20}
 
-// 2nd Method
+
+
+// 2nd Method using new keyword
+
 var e = new Object();
 undefined
 e;
@@ -32,7 +36,10 @@ typeof e;
 typeof g;
 'object'
 
-// 3rd Method
+
+
+// 3rd Method Using Create method
+
 var f = Object.create(null);
 undefined
 f;
@@ -58,7 +65,9 @@ undefined
 obj2 ===obj;
 true
 
+
 // 4th Method   Using Spread Operator for Creating a Clone Object
+
 var obj3 = {...obj};
 undefined
 obj3;
