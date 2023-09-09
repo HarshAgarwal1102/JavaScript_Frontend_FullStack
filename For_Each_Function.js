@@ -12,7 +12,8 @@ arr.forEach(e=>console.log(e));
 50
 60
 
-arr.forEach((element, index)=>console.log(index, element));
+// Element algument is compulsory to pass.. rest index and array passing wasn't mandate
+arr.forEach((element, index)=>console.log(index, element));   
 0 10
 1 20
 2 30
