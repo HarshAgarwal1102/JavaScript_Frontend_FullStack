@@ -1,6 +1,20 @@
 // What is Coercion ?
 // Dynamically typed language used Coercion for Typecasting...
 
+
+/*
+  Implicit Coercion
+
+    1. String + Number => String   // Anything with string returns String...
+    2. Number + String => String
+    3. String + Boolean => String
+    4. Number + null => Number
+    5. Number + Undefined => Number
+    6. Number + Boolean => Number
+    7. Undefined + null => Number
+    8. null + Undefined => Number
+    9. Array + Array => String
+*/
 var a = 10;
 undefined
 var name = "ram";
@@ -19,8 +33,10 @@ NaN
 11
 "Amit" + true;
 'Amittrue'
-[] + [];
+[] + [];           Array + Array => String
 ''
+
+
 100 + parseInt("100");
 200
 100 - "100"
