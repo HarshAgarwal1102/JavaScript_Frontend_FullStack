@@ -59,4 +59,4 @@ typeof parseInt;
 var e = 100;
 undefined
 e.toString();   // another ques aries that, How we applied . on primitive type, we can use it only with refernce types..
-'100'
+'100'              // Is everything Object in JS ??
