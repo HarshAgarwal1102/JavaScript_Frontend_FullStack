@@ -63,22 +63,25 @@ for(var i=0; i<arr.length; i++){
     }
 }
 3
-arr2
+arr2;
 (3) [40, 40, 40]
 
-arr2.length
+arr2.length;
 3
 
+
 // Declarative Programming
+
 // if you want to store multiple records we can use filter method.
-arr.filter((e)=>e==40);  // Pure func" (Arrow Functions) contains No Arguments, No this keyword
+arr.filter((e)=>e==40);   // Pure func" (Arrow Functions) contains No Arguments, No this keyword
 (3) [40, 40, 40]
 var g = arr.filter((e)=>e==40);
 undefined
-g.length
+g.length;
 3
+
 // if you want to store a single record we can use find method.
 var c = arr.find((e)=>e==10);
 undefined
-c.length
+c.length;
 1
