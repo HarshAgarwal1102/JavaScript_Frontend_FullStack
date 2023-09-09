@@ -1,13 +1,13 @@
 
-// If you are applying ... with function then it is a Rest
-// If you are applying ... with Object/ array then it is a Spread
+// If you are applying (...) with function then it is a Rest.
+// If you are applying (...) with Object/ array then it is a Spread.
 
 
 var arr = [10,20,30];
 undefined
 var arr2 = [100,200,300];
 undefined
-var arr3 = [arr, arr2]; // this will acts as a 2-D array
+var arr3 = [arr, arr2];   // this will acts as a 2-D array
 undefined
 arr3;
 (2) [Array(3), Array(3)]
@@ -15,10 +15,10 @@ arr3[0][0];  // Printing 2-D array
 10
 
 // Spread Operator
-var arr4 = [...arr, ...arr2]; // this will copy values into new Array
+var arr4 = [...arr, ...arr2];    // this will copy values into new Array , basially this will flatten the entire array.
 undefined
 arr4;
-(6) [10, 20, 30, 100, 200, 300]   //These are the copied values
+(6) [10, 20, 30, 100, 200, 300]   // These are the copied values (1-D array)
 
 var emp  = {id:1001, name:'Ram', salary:10000};
 undefined
