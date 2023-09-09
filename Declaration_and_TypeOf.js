@@ -5,6 +5,8 @@ var a;
 undefined
 typeof a;   // if no value is assigned to a variable then it's value and type must be undefined
 'undefined'
+typeof undefined;   // undefined is undefined
+'undefined'
 a=100;
 100
 typeof a;
@@ -29,17 +31,15 @@ a = "Amit";
 'Amit'
 typeof a;
 'string'
-typeof 10+20;
+typeof 10+20;  // this will work like concatination if we don't give priority
 'number20'
-typeof (10+20);
+typeof (10+20);  // priority given...
 'number'
-typeof undefined;
-'undefined'
 var x = 100;
 undefined
 var y = x;
 undefined
-y + 10;
+y + 10;      // we have only add something to the value of y, but not assign it to y.
 110
-y;
+y;        // that's why value remains the same
 100
