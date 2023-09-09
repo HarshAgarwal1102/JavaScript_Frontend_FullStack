@@ -23,7 +23,7 @@ r;
 100
 
 // Window Object
-window.r;
+window.r;                // Just after declaring as accidental global that varibale is bind with Window object
 100
 typeof window;          // window is an object
 'object'
