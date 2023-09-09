@@ -1,5 +1,10 @@
 // We can write a String using "" OR '' 
-// If we want multiline then we can use BACKTICK `` 
+
+/*
+ES6 onwards we have an advantage of the following...
+    1. If we want multiline String then we can use BACKTICK `` 
+    2. String Interpolation `X is ${x} and Y is ${y}`; easy as compared with "X is "+x+" and Y is "+y;
+*/
 
 
 var a = "Amit";       // String in ""
@@ -38,6 +43,7 @@ undefined
 'X is 10 and Y is 20'
 `X is ${x} and Y is ${y}`;
 'X is 10 and Y is 20'
+
 var t = true;
 undefined
 true + true;
