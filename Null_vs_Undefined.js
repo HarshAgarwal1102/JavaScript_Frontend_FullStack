@@ -79,7 +79,7 @@ var g = 100;
 undefined
 typeof g;        // primmitive type
 'number'
-g = null;      // don't do this with primmitive types
+g = null;      // don't do this with primmitive types         // Not allowed in Typescript,  bcz that's a strict typescript (Static Language)
 null
 typeof g;      // Now it's Object
 'object'
