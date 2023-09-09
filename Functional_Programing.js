@@ -6,7 +6,7 @@
 //     d) Nested Function
 // 2. Declarative Programming vs Imperative Programming 
 // 3. Pure Functions
-//      -> Arrow Functions (No Arguments, No this keyword)
+//      -> Arrow Functions (No own Arguments, No own this keyword)
 //     a) Easy to Write
 //     b) Easy to Understand
 //     c) Easy to Debug
