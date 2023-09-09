@@ -59,15 +59,16 @@ false
 obj;
 {x: 90, y: 20}
 
+
+// 4th Method Clonning of Objects...  Using Spread Operator for Creating a Clone Object
+
 // we don't do this while cloning an Object bcz they will point at same address
 var obj2 = obj;
 undefined
-obj2 ===obj;
+obj2 === obj;
 true
 
-
-// 4th Method   Using Spread Operator for Creating a Clone Object
-
+// using Spread Operator
 var obj3 = {...obj};
 undefined
 obj3;
