@@ -31,8 +31,9 @@ arr.filter(e=>e==40).length;
 // find those elements which is >20 without using filter
 
 var arr = [10, 20, 40, 30, 40, 50, 60, 40];
-undefined
 
+// result is accumulator.
+// result = [];
 arr.reduce((result,e)=>{
     if(e > 20){
         result.push(e);
@@ -40,6 +41,7 @@ arr.reduce((result,e)=>{
     return result;
 },[]);
 (6) [40, 30, 40, 50, 60, 40]
+
 
 // print index also 
 
