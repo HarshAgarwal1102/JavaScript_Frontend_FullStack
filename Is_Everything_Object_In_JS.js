@@ -1,8 +1,8 @@
-// Is Everything Object in JS?
-// No, null, undefined, strings, numbers, boolean, and symbols. These are called primitive values or primitive types, they have pure values.
-// but still we are able to access methods & properties.
-
-
+/* Is Everything Object in JS?
+     No, Primitive are not Objects. 
+     Null, undefined, strings, numbers, boolean, and symbols, these are called primitive values or primitive types, 
+     they have pure values, but still we are able to access methods & properties.
+*/
 
 //  Why this ques arise..?
 
