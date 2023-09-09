@@ -15,13 +15,13 @@ add(10,20);
 function show(){
     console.log(" i am the show ");
 }
-undefined
-show();
-VM260:2  i am the show 
 
-var e = new show();
-VM260:2  i am the show 
-undefined
+show();
+i am the show 
+
+var e = new show();            // creating object
+i am the show 
+
 typeof e;
 'object'
 e instanceof show;
@@ -30,26 +30,28 @@ show.constructor;
 ƒ Function() { [native code] }
 add(10,20);
 30
-var t = new add(10,20);
+
+
+var t = new add(10,20);       // Pure function
 VM529:1 Uncaught TypeError: add is not a constructor
     at <anonymous>:1:9
 (anonymous) @ VM529:1
-add.constructor;
+
+add.constructor;        // Property is there but we can't use that property
 ƒ Function() { [native code] }
 add(10,20);
 30
-var f = new add(10,20);
-VM655:1 Uncaught TypeError: add is not a constructor
-    at <anonymous>:1:9
-(anonymous) @ VM655:1
+
+
 var adder = (x,y)=>{
     console.log(x, y);
     return x + y;    // if code is of multiple lines then writting return explicitly is imp.
 }
-undefined
+
 adder(10,20);
-VM798:2 10 20
+10 20
 30
+
 console.dir(show);
 VM901:1 ƒ show()arguments: nullcaller: nulllength: 0name: "show"prototype: {constructor: ƒ}[[FunctionLocation]]: VM260:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
 undefined
