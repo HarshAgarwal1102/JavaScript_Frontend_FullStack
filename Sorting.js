@@ -1,25 +1,31 @@
 var arr = [1, 10, 2, 20, 33, 88, 90];
-undefined
 
-// Sorting on the basis of ASCII values.
-arr.sort();
+arr.sort();            // Sorting on the basis of ASCII values.
 (7) [1, 10, 2, 20, 33, 88, 90]
 
-// This is done on the basis of elements. This is Mutable
-arr.sort((a,b)=>a-b);
-(7) [1, 2, 10, 20, 33, 88, 90]
+
+/*
+  Three trigring points on sorting..
+    1. if a-b => negtive then <
+    2. if a-b => positive then >
+    3. if a-b => equal then 0
+*/
+
+arr.sort((a,b)=>a-b);       // This is done on the basis of elements. This is Mutable
+(7) [1, 2, 10, 20, 33, 88, 90]       // a-b => ascending order..
 
 arr;
 (7) [1, 2, 10, 20, 33, 88, 90]
 
 var names = ["ram", "amit", "tim", "shyam"];
-undefined
+
 "ram".localeCompare("amit");  // ram > amit  // true
 1
 "amit".localeCompare("ram");  // amit > ram   // false
 -1
 "amit".localeCompare("amit");  // amit > amit 
 0
+
 names.sort((a,b)=>a.localeCompare(b));  // ascending order
 (4) ['amit', 'ram', 'shyam', 'tim']
 names.sort((a,b)=>b.localeCompare(a));  // descending order
