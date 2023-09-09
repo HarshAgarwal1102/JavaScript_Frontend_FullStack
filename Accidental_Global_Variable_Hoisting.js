@@ -1,3 +1,5 @@
+// 'use strict' for getting rid of Accidental Global variables
+
 var a = 10;
 undefined
 typeof a;
@@ -36,5 +38,3 @@ typeof yy;
 'number'
 window.yy;
 88
-'use strict'
-'use strict'
