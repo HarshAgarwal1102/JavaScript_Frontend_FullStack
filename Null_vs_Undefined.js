@@ -1,23 +1,33 @@
 // null vs undefined
+
+// NULL is used for dereferencing...
+// UNDEFINED means no value..
+
+
+var t ;          // no value
 undefined
-var t ;
-undefined
-var arr = [10,20,30];
+
+var arr = [10,20,30];           // Currently arr contains refernce of the Object
 undefined
 typeof arr;
 'object'
-arr = null;
+
+arr = null;              // we removed the refernce.....
 null
 typeof arr;
 'object'
-typeof null;
+typeof null;           // NULL is an Object
 'object'
+
+
 typeof undefined;
 'undefined'
 t;
 undefined
 typeof t;
 'undefined'
+
+
 null == undefined;
 true
 typeof null;
