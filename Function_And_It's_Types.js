@@ -5,8 +5,8 @@ function show(x,y){
 }
 var z = show(10,20);
 console.log(z);
-VM222:5 30
-undefined
+30
+
 function test(){
     return 10,20;    // function will never return 2 values, so it will return the last value.
 }
