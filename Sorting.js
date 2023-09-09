@@ -1,3 +1,7 @@
+// If we want to sort number from primitive types => a-b
+// If we want to sort string from primitive types => a.localeCompare(b)
+
+
 var arr = [1, 10, 2, 20, 33, 88, 90];
 
 arr.sort();            // Sorting on the basis of ASCII values.
@@ -30,6 +34,11 @@ names.sort((a,b)=>a.localeCompare(b));  // ascending order
 (4) ['amit', 'ram', 'shyam', 'tim']
 names.sort((a,b)=>b.localeCompare(a));  // descending order
 (4) ['tim', 'shyam', 'ram', 'amit']
+
+
+
+// If we want to sort number from object => a.keyname - b.keyname
+// If we want to sort string from object => a.keyname.localeCompare(b.keyname)
 
 var products = [{id:1001, name:'Adidas', price:2000}, {id:1000, name:'Puma', price:1100}, {id:1003,name:'Bata', price:2999}];
 undefined
