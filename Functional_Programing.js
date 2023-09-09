@@ -1,16 +1,17 @@
-// Functional Programming
-// 1. Functions are No.- 1 citizens.
-//     a) Passing function as an argument (callback function)
-//     b) Function returns a function
-//     c) Function as a data type
-//     d) Nested Function
-// 2. Declarative Programming vs Imperative Programming 
-// 3. Pure Functions
-//      -> Arrow Functions (No own Arguments, No own this keyword)
-//     a) Easy to Write
-//     b) Easy to Understand
-//     c) Easy to Debug
-
+/*
+Functional Programming
+1. Functions are No.- 1 citizens.
+    a) Passing function as an argument (callback function)
+    b) Function returns a function
+    c) Function as a data type
+    d) Nested Function
+2. Declarative Programming vs Imperative Programming 
+3. Pure Functions
+      Arrow Functions (No own Arguments, No own this keyword)
+        a) Easy to Write
+        b) Easy to Understand
+        c) Easy to Debug
+*/
 
 // Receiving function as a parameter
 function show(calCube){
