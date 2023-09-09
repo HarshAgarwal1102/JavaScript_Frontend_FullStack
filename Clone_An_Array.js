@@ -19,3 +19,12 @@ g;
 (6) [10, 20, 30, 40, 50, 60]
 g === arr1;
 false
+
+
+//  we can also make a clone of an array (using map method)
+// map creates the array of same length
+var g = arr.map(w=>w); // we are creating a sub array
+g;
+(6) [10, 20, 30, 40, 50, 60]
+g === arr1;
+false
