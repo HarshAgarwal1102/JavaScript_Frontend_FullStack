@@ -184,11 +184,17 @@ function calc(){
 }
 
 calc();
-(2) [ƒ, ƒ]0: ƒ adder(x,y)1: ƒ subtract(x,y)length: 2[[Prototype]]: Array(0)
+(2) [ƒ, ƒ]
+    0: ƒ adder(x,y)
+    1: ƒ subtract(x,y)
+    length: 2
+    [[Prototype]]: Array(0)
+
 calc()[0](10,20);
 30
 calc()[1](10,20);
 -10
+
 function calc(){
     var add = function (x,y){
         return x + y;
@@ -198,13 +204,15 @@ function calc(){
     }
     return {add, sub};
 }
-undefined
+
 var t = calc();
-undefined
+
 typeof t;
 'object'
+
 t;
 {add: ƒ, sub: ƒ}
+
 t.add(10,20);
 30
 t.sub(10,20);
