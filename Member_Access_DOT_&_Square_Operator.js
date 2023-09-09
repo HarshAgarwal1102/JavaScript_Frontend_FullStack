@@ -26,24 +26,21 @@ emp['name'];
 emp;
 {id: 1001, name: 'Ram'}
 
+
+
 // Diff b/w [] & . Operator
 // Using square Operator we can able to access numeric key, as comapred to (.) Operator
+
 var msdhoni = {name:'MS DHONI', age: 42, 100: 15, 50:52};
-undefined
-msdhoni.name;
-'MS DHONI'
-msdhoni.age;
-42
-msdhoni.50; // we won't able to acess numeric key using DOT Operator
+
+msdhoni.50;        // we won't able to acess numeric key using DOT Operator
 VM429:1 Uncaught SyntaxError: Unexpected number
-msdhoni['name'];
-'MS DHONI'
-msdhoni['age'];
-42
-msdhoni[50];  // we are able to acess numeric key using [] Operator
+
+msdhoni[50];       // we are able to acess numeric key using [] Operator
 52
 msdhoni[100];
 15
+
 msdhoni.city = 'Delhi';
 'Delhi'
 msdhoni;
