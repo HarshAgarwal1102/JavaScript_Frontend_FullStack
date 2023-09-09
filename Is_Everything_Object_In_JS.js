@@ -43,6 +43,7 @@ a;
 typeof a; 
 'number'
 
+// Here this ques arise, Is Everything Object in JS?
 a.toString();         // Not Object Still we are able to access the methods, due to Auto-Boxing concept
 '10'
 a;  // here updation will be done in Immutable way.. not changed the original value..
