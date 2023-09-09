@@ -83,19 +83,27 @@ true
 typeof Array;
 'function'
 
-// big int
-undefined
-var views = 1243243535345n;
+
+
+
+// More on BIG INT
+
+// If we want to store youtube views....
+
+
+var views = 1243243535345n;         // hard Coded bigint   
 undefined
 typeof views;
 'bigint'
-views = BigInt("564873564783658743658763485768437");
+views = BigInt("564873564783658743658763485768437");       // Convert String to BigInt
 564873564783658743658763485768437n
-typeof BigInt;
+typeof BigInt;    // Bigint is a function
 'function'
-var input = "453534543534532453243245";
+
+
+var input = "453534543534532453243245";        // We can't take such large values as a Number, Taking as string....
 undefined
-views = BigInt(input);
+views = BigInt(input);               // Converting String into Bigint....
 453534543534532453243245n
 views;
 453534543534532453243245n
@@ -117,7 +125,7 @@ views++;
 453534543534532453243252n
 views + 543546456546n;
 453534543535075999699799n
-views + 43424;
+views + 43424;            // Can't concat bigint with Number... or any another types
 VM481:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
     at <anonymous>:1:7
 (anonymous) @ VM481:1
