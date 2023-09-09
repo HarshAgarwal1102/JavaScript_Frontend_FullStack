@@ -74,22 +74,24 @@ output()['x'];
 
 // JS is a compiled language, Compilation uses the Principle of Hoisting.
 // Hoisting - Place declaration at the Top(Window(root) Object).
-show(); // Call
-function show(){ // Define
+
+show();      // Call
+function show(){            // Define
     console.log(" I am the Show ");
 }
-VM108:3  I am the Show 
-undefined
+I am the Show 
+
 window.show;
-ƒ show(){ // Define
+ƒ show(){   
     console.log(" I am the Show ");
 }
+
 window.show();
-VM108:3  I am the Show 
-undefined
+I am the Show 
+
 show();   // basically it is window.show();
-VM108:3  I am the Show 
-undefined
+I am the Show 
+
 
 
 // 2nd Anonymous function / Function Expression / UnNamed Function.
@@ -104,11 +106,11 @@ z();
 VM312:2 I am the Anonymous Function 
 undefined
 
-m(); 
+m();          // Hoisting takes place...
 var m = function(){
     console.log("I am the Function Expression");
 }
-VM442:1 Uncaught TypeError: m is not a function   // because only declaration is there instead of assigning
+VM442:1 Uncaught TypeError: m is not a function     // because only declaration is done instead of assigning
     at <anonymous>:1:1
 (anonymous) @ VM442:1
 m;
@@ -118,33 +120,33 @@ undefined
 // 3rd Named Function.
 
 // NFE
-undefined
+
 function add(){
     console.log("Customer Add ");
 }
-undefined
+
 window.add();
-VM105:2 Customer Add 
-undefined
+Customer Add 
+
 function add(){
     console.log("Math add ");
 }
-undefined
-window.add(); // Override
-VM214:2 Math add 
-undefined
+
+window.add();         // Override
+Math add 
+
 function show(){
-var x = 10;
-    var x =20;
-    if(x>1){
+    var x = 10;
+    var x = 20;
+    if(x > 1){
         var x = 30;
     }
     console.log(x);  
 }
-undefined
-show();  // Override the values
-VM371:7 30
-undefined
+
+show();      // Override the values
+30
+
 function calc(){
     var add = function(x,y){
         return x + y;
@@ -154,20 +156,23 @@ function calc(){
     }
     return [add, sub];
 }
-undefined
+
 var arr = calc();
-undefined
+
 arr;
 (2) [ƒ, ƒ]
+
 arr[0](10,20);
 30
 arr[1](10,20);
 -10
+
 add();
-VM214:2 Math add 
-undefined
+Math add 
+
 arr[0](10,20);
 30
+
 function calc(){
     var add = function adder(x,y){
         return x + y;
@@ -177,7 +182,7 @@ function calc(){
     }
     return [add, sub];
 }
-undefined
+
 calc();
 (2) [ƒ, ƒ]0: ƒ adder(x,y)1: ƒ subtract(x,y)length: 2[[Prototype]]: Array(0)
 calc()[0](10,20);
