@@ -123,7 +123,7 @@ views++;
 453534543534532453243251n
 views++;
 453534543534532453243252n
-views + 543546456546n;
+views + 543546456546n;             // Allowed concat of bigint with bigint only...
 453534543535075999699799n
 views + 43424;            // Can't concat bigint with Number... or any another types
 VM481:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
