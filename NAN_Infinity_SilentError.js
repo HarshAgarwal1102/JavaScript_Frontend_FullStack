@@ -1,3 +1,14 @@
+// NaN is a silent error in JS
+// Infinity is also a silent error in JS
+
+// Both are of number type
+
+
+// Helper methods are used to handle errors
+// NaN => Helper method - isNaN();
+// Infinity => Helper method - isFinite();
+
+
 var a=10;
 undefined
 typeof a;
@@ -28,7 +39,7 @@ a;
 NaN
 isNaN(a);
 true
-isNaN(a)?0:a;
+isNaN(a)?0:a;  // Handling error...
 0
 a;
 NaN
@@ -50,7 +61,7 @@ isFinite(a);
 true
 a = 10/0;
 Infinity
-isFinite(a)?a:0;
+isFinite(a)?a:0;    // Handling error...
 0
 10 + "20"
 '1020'
