@@ -55,14 +55,14 @@ false
 
     that's why it's giving true...
 */
+
+// Below are the example for better understanding....
 10 == "10"
 true
 10 === "10";
 false
 10 === 10;
 true
-10 + undefined;'
-VM561:1 Uncaught SyntaxError: Invalid or unexpected token
 10 + undefined;
 NaN
 10 + null;
