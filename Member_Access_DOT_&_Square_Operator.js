@@ -108,14 +108,16 @@ dhoni;
 
 dhoni.full address = "New Delhi";
 VM375:1 Uncaught SyntaxError: Unexpected identifier 'address'
-dhoni.['full address'] = "New Delhi";
-VM383:1 Uncaught SyntaxError: Unexpected token '['
+
 dhoni['full address'] = "New Delhi";
 'New Delhi'
+
 dhoni;
 {50: 51, 100: 10, id: 7, name: 'MS Dhoni', full address: 'New Delhi'}
+
 dhoni['full address'];
 'New Delhi'
+
 var r = 'id';
 undefined
 dhoni.r;
