@@ -1,16 +1,21 @@
-var a = "Amit";
+// We can write a String using "" OR '' 
+// If we want multiline then we can use BACKTICK `` 
+
+
+var a = "Amit";       // String in ""
 undefined
 typeof a;
 'string'
-a = 'Amit';
+a = 'Amit';        // String in ''
 'Amit'
 typeof a;
 'string'
-a = 'A';
+a = 'A';             // Nothing like character in JS
 'A'
 typeof a;
 'string'
-a = "Let's Do It ";
+
+a = "Let's Do It ";    // Advantage as we can apply ' directly in ""
 "Let's Do It "
 typeof a;
 'string'
@@ -19,8 +24,8 @@ fjhdsjkgdf
 gjhdfkj
 ghsdkj`;
 'gjdfkghkdjfgjkdf\nfjhdsjkgdf\ngjhdfkj\nghsdkj'
-console.log(a);
-VM338:1 gjdfkghkdjfgjkdf
+console.log(a);          // Multiline 
+gjdfkghkdjfgjkdf
 fjhdsjkgdf
 gjhdfkj
 ghsdkj
