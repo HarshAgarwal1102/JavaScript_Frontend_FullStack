@@ -1,11 +1,17 @@
-var add = (x,y)=>x+y;  // if code is of single lines then writing return implicitly.
-undefined
+// Arrow Functions are recommended to use
+
+var add = (x,y) => x+y;  // if code is of single lines then writing return implicitly.
+
 typeof add;
 'function'
+
 add(10,20);
 30
 
-// Pure Function
+
+// Arrow Functions are Pure Function
+
+// Named Functions are not pure functions as they have the ability to create object constructor
 function show(){
     console.log(" i am the show ");
 }
