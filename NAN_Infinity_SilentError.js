@@ -63,9 +63,10 @@ a = 10/0;
 Infinity
 isFinite(a)?a:0;    // Handling error...
 0
-10 + "20"
+
+10 + "20"   
 '1020'
-10 + parseInt("20");
+10 + parseInt("20");   // Convert String into an Integer (Number)
 30
-10 + parseFloat("20.99");
+10 + parseFloat("20.99");    // Convert String into an Float (Number)
 30.99
