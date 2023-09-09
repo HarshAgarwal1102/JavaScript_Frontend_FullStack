@@ -28,14 +28,33 @@ typeof t;
 'undefined'
 
 
-null == undefined;
+null == undefined;            // When Both are unequal then why it's giving true....
+true
+/*
+    == is a loose comaprision Operator
+    1. Type Conversion        // Convert one type into another
+    2. Comparision     // now check that both have nothing
+
+    that's why it's giving true...
+*/
+null == undefined;   
 true
 typeof null;
 'object'
 typeof undefined;
 'undefined'
+
 null === undefined;
 false
+/*
+    === is a Strict comaprision Operator
+    1. Type Check        // Check wheather both are of same type...
+    if not same type then immediately return false
+    else if same then ... 2nd step
+    2. Comparision of values     // now check that both are similar or not
+
+    that's why it's giving true...
+*/
 10 == "10"
 true
 10 === "10";
