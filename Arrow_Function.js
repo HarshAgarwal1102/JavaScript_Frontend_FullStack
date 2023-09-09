@@ -79,7 +79,7 @@ var g =()=>"Hello";  // writing brackets when there is no argument is compulsory
 undefined
 g();
 'Hello'
-var y = x=>x*x;   // not writing brackets when there is one argument is optional
+var y = x=>x*x;   // writing brackets when there is one argument is optional
 undefined
 y(10);
 100
