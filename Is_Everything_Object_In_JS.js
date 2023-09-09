@@ -56,7 +56,10 @@ a;  // here updation will be done in Immutable way.. not changed the original va
 // okay so that's alright we can access methods and properties using wrapper types because wrapper types are functions.
 // But how this value type able to access??
 // Bcz when we apply (.) to primitive types then at runtime it convert it into wrapper type => this will convert it into Object type.
-// Behind the scene it uses the concept of Auto-Boxing.
+/* Behind the scene it uses the concept of Auto-Boxing.
+     1. Boxing
+     2. Unboxing
+*/
 
 var b = new Number(10);
 undefined
@@ -73,11 +76,11 @@ true
 typeof Number;     
 'function'
 
-var name = "Amit"; // Immutable
+var name = "Amit";   // Immutable
 undefined
 typeof name;
 'string'
-var name2 = new String("Amit"); // Mutable (Wrapper Classes)
+var name2 = new String("Amit");   // Mutable (Wrapper Classes)
 undefined
 name2;
 String {'Amit'}
@@ -85,11 +88,11 @@ typeof name2;
 'object'
 name2 instanceof String;
 true
-name.toUpperCase();     // Not Object Still we are able to access the methods, due to Auto-Boxing concept
+name.toUpperCase();     // It's not an Object still we are able to access the methods, due to Auto-Boxing concept
 'AMIT'
 name;       // Immutable will not make any change in original values, it will always create a Copy of Value
 'Amit'
-typeof name.toUpperCase(); // this is copy of value
+typeof name.toUpperCase();    // this is copy of value
 'string'
 var r = new String("AMIT");
 undefined
