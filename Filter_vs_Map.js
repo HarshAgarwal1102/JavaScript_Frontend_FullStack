@@ -3,6 +3,7 @@
 var arr = [10, 20, 30, 40, 50, 60];
 
 // Filter creates the array(basically array length) on the basis of the condition
+// Filter checks for the condtion that it is true / false.
 
 var g = arr.filter(w=>true);    // created the clone
 g;
@@ -16,6 +17,7 @@ arr;
 
 // Map creates the array(basically array length) same as the given array
 // We can also do cloning with map
+
 var j = arr.map(e=>e*2);
 j;
 (6) [20, 40, 60, 80, 100, 120]
