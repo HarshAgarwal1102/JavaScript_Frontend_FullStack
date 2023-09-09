@@ -2,35 +2,46 @@
 // No, null, undefined, strings, numbers, boolean, and symbols. These are called primitive values or primitive types, they have pure values.
 // but still we are able to access methods & properties.
 
-var a = 10;
-undefined
-var arr = [10,20,30];
+
+
+// Problem... Why this ques arise..?
+
+
+// Objects => Data + Methods + Properties..   This is perfectly fine...
+
+var arr = [10,20,30];          // Data 
 undefined
 typeof arr;
 'object'
-arr.push(100);
+arr.push(100);     // Method
 4
 arr;
 (4) [10, 20, 30, 100]
-arr.pop();
+arr.pop();           // Method
 100
 arr;
 (3) [10, 20, 30]
-arr.unshift(99);
+arr.unshift(99);        // Method
 4
 arr;
 (4) [99, 10, 20, 30]
-arr.shift();
+arr.shift();          // Method
 99
 arr;
 (3) [10, 20, 30]
-arr.length; // Object
+arr.length;      // Property..
 3
+
+
+// But how using value types we are able to access methods and propeties..
+
+var a = 10;
+undefined
 a; 
 10
 typeof a; 
 'number'
-a.toString(); // Not Object Still we are able to access the methods, due to Auto-Boxing concept
+a.toString();         // Not Object Still we are able to access the methods, due to Auto-Boxing concept
 '10'
 a;
 10
