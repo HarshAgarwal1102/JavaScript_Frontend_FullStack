@@ -14,30 +14,22 @@ Functional Programming
 */
 
 // Receiving function as a parameter
+
 function show(calCube){
-    for(var i =1; i<=10; i++){
+    for(var i =1; i<=5; i++){
         calCube(i);
     }
 }
-undefined
 function cube(num){
-    console.log(num**3); // this ** will works as the power num^3
+    console.log(num**3);   // this ** will works as the power num^3
 }
-undefined
 
-show(cube);  // Passing function as an argument
-VM314:2 1
-VM314:2 8
-VM314:2 27
-VM314:2 64
-VM314:2 125
-VM314:2 216
-VM314:2 343
-VM314:2 512
-VM314:2 729
-VM314:2 1000
-undefined
-
+show(cube);      // Passing function as an argument
+1
+8
+27
+64
+125
 
 
 // Nested Function
@@ -48,13 +40,13 @@ function calculator(){
     }
     return add;  // function returns function
 }
-undefined
+
 var f = calculator(); 
-undefined
-f              // function as a data type
+f;              // function as a data type
 ƒ (x,y){
         return x+y;
     }
+
 f(10, 20);
 30
 
@@ -62,11 +54,9 @@ f(10, 20);
 // Imperative Programming (Normally we do it on a daily basis...)
 
 var arr = [10, 20, 40, 30, 40, 50, 60, 40];
-undefined
 var search = 40;
-undefined
 var arr2 = [];
-undefined
+
 for(var i=0; i<arr.length; i++){
     if(arr[i] == search){
         arr2.push(arr[i]);
@@ -75,6 +65,7 @@ for(var i=0; i<arr.length; i++){
 3
 arr2
 (3) [40, 40, 40]
+
 arr2.length
 3
 
