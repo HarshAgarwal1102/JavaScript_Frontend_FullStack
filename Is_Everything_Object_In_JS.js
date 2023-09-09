@@ -4,11 +4,11 @@
 
 
 
-// Problem... Why this ques arise..?
+//  Why this ques arise..?
 
 
 // Objects => Data + Methods + Properties..   This is perfectly fine...
-
+// Updation will be done in Mutable way
 var arr = [10,20,30];          // Data 
 undefined
 typeof arr;
@@ -32,19 +32,22 @@ arr;
 arr.length;      // Property..
 3
 
+// Problem... 
 
-// But how using value types we are able to access methods and propeties..
+// How using value types we are able to access methods and propeties..
 
 var a = 10;
 undefined
-a; 
+a;     
 10
 typeof a; 
 'number'
+
 a.toString();         // Not Object Still we are able to access the methods, due to Auto-Boxing concept
 '10'
-a;
+a;  // here updation will be done in Immutable way.. not changed the original value..
 10
+
 var b = new Number(10);
 undefined
 a;
