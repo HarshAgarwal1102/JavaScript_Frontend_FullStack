@@ -9,7 +9,7 @@ add(10,20);
 30
 
 
-// Arrow Functions are Pure Function
+// Arrow Functions are Pure Function => No this concept, no constructur, no arguments
 
 // Named Functions are not pure functions as they have the ability to create object constructor
 function show(){
@@ -57,33 +57,33 @@ VM901:1 ƒ show()arguments: nullcaller: nulllength: 0name: "show"prototype: {con
 undefined
 console.dir(add);
 VM948:1 add()length: 2name: "add"arguments: (...)caller: (...)[[FunctionLocation]]: VM60:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
-undefined
+
 var myadd = ()=>{
     console.log(arguments.length);
 }
-undefined
+
 function disp(){
     console.log(arguments.length);
 }
-undefined
-disp(10,20); // working fine bcz it's not an Arrow function
+
+disp(10,20);           // working fine bcz it's not an Arrow function
 VM1202:2 2
 undefined
-myadd(10,20);  //  this will give error bcz it is an Arrow function, Pure function.
+myadd(10,20);        //  this will give error bcz it is an Arrow function, Pure function no concept of arguments.
 VM1070:2 Uncaught ReferenceError: arguments is not defined
     at myadd (<anonymous>:2:17)
     at <anonymous>:1:1
 myadd @ VM1070:2
 (anonymous) @ VM1275:1
-var myadd = (...a)=>{   // if we want to pass multiple arguments then we have to use REST method
+
+var myadd = (...a)=>{           // if we want to pass multiple arguments then we have to use REST method
     console.log(a.length);
 }
-undefined
 
 myadd(10,20,30,40);
-VM1320:2 4
-undefined
-var g =()=>"Hello";  // writing brackets when there is no argument is compulsory
+4
+
+var g =()=>"Hello";   // writing brackets when there with no argument is compulsory
 undefined
 g();
 'Hello'
