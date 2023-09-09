@@ -15,7 +15,7 @@ arr;
 
 
 // Map creates the array(basically array length) same as the given array
-
+// We can also do cloning with map
 var j = arr.map(e=>e*2);
 j;
 (6) [20, 40, 60, 80, 100, 120]
