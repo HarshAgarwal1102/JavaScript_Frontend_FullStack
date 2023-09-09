@@ -1,3 +1,6 @@
+// What is Coercion ?
+// Dynamically typed language used Coercion for Typecasting...
+
 var a = 10;
 undefined
 var name = "ram";
