@@ -6,14 +6,18 @@ function show(x,y){
 undefined
 show(10,20);
 30
-show(10);
-NaN  // reason in next line
+show(10);     // missing argument will give NaN
+NaN            
 10 + undefined;
 NaN
-show();
-NaN  // reason in next line
+
+show();    // No argument pass
+NaN  
 undefined + undefined;
 NaN
+
+
+// ES6 Onwards we got the feature ..
 
 function show(x =0,y=0){
     return  x + y;
@@ -42,30 +46,37 @@ a;
 undefined
 a?"Truthy":"Falsy";
 'Falsy'
+
 a=10;
 10
 a?"Truthy":"Falsy";
 'Truthy'
+
 a=null;
 null
 a?"Truthy":"Falsy";
 'Falsy'
+
 a=0;
 0
 a?"Truthy":"Falsy";
 'Falsy'
+
 a="";
 ''
 a?"Truthy":"Falsy";
 'Falsy'
+
 a=NaN;
 NaN
 a?"Truthy":"Falsy";
 'Falsy'
+
 a="Amit";
 'Amit'
 a?"Truthy":"Falsy";
 'Truthy'
+
 function disp(x,y){
     x = x || 0;
     y = y || 0;
