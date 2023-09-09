@@ -69,11 +69,17 @@ NaN
 10
 arr;
 null
+
+
+// BAD practice 
+
+// Don't convert primmitive types to Object...
+
 var g = 100;
 undefined
-typeof g;
+typeof g;        // primmitive type
 'number'
-g = null;
+g = null;      // don't do this with primmitive types
 null
-typeof g;
+typeof g;      // Now it's Object
 'object'
