@@ -8,6 +8,12 @@ obj instanceof Object;
 true
 typeof Object;   // GOD Function
 'function'
+
+// It's not goood to write this like this... writting same thing again n again
+var emp = {id:1001, name:'Tim'}
+var emp2 = {id:1002, name:'Vim'};
+
+
 function createEmp(id, name , salary){
     var emp = {}; // Object Literal
     emp.id = id;
@@ -22,13 +28,6 @@ ram instanceof createEmp;      // not a specific object
 false
 ram instanceof Object;       // Object is GOD Function
 true
-
-var shyam = createEmp(1002, 'Shyam', 122222);
-shyam;
-{id: 1002, name: 'Shyam', salary: 122222}
-var tom = createEmp(1003, 'Tom', 122222);
-tom;
-{id: 1003, name: 'Tom', salary: 122222}
 
 
 // Specific Objects
