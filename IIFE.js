@@ -86,22 +86,21 @@ g();         // now there is no way to resest the count value.
 // Using VAR.
 
 function scope(){
-    console.log(" i is ", i); // undefined
+    console.log(" i is ", i);    // undefined
     for(var i = 1; i<=5; i++){
         console.log("I is ", i);
     }
-    console.log("I is ", i);
+    console.log("I is ", i);      // 6
 }
-undefined
+
 scope();
-VM511:2  i is  undefined
-VM511:4 I is  1
-VM511:4 I is  2
-VM511:4 I is  3
-VM511:4 I is  4
-VM511:4 I is  5
-VM511:6 I is  6
-undefined
+i is  undefined
+I is  1
+I is  2
+I is  3
+I is  4
+I is  5
+I is  6         // It's clear that there is no blocking scope of var. 
 
 
 //  When let is there in ES6(2015).
@@ -113,7 +112,7 @@ function scope(){
     }
     console.log("I is ", i); // Error
 }
-undefined
+
 scope();
 VM566:2 Uncaught ReferenceError: i is not defined
     at scope (<anonymous>:2:27)
