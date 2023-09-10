@@ -86,46 +86,51 @@ Customer.prototype.show= function(){   // Common function
 ƒ (){
     console.log(`Id is ${this.id} Name ${this.name} Balance ${this.balance}`);
 }
-tom.show();  // can access that common function 
-VM2395:2 Id is 1001 Name Tom Balance 22222
-undefined
-kim.show();  // can access that common function 
-VM2395:2 Id is 1003 Name Kim Balance 42222
-undefined
-tim.show();  // can access that common function 
-VM2395:2 Id is 1002 Name Tim Balance 322222
-undefined
 
-tim;
-Customer {id: 1002, name: 'Tim', balance: 322222, printCustomer: ƒ}balance: 322222id: 1002name: "Tim"printCustomer: ƒ ()[[Prototype]]: Objectshow: ƒ ()constructor: ƒ Customer(id, name, balance)[[Prototype]]: Object
+tom.show();  // can access that common function 
+Id is 1001 Name Tom Balance 22222
+
+kim.show();  // can access that common function 
+Id is 1003 Name Kim Balance 42222
+
+tim.show();  // can access that common function 
+Id is 1002 Name Tim Balance 322222
+
+tim;       // internally we have a reference
+    Customer {id: 1002, name: 'Tim', balance: 322222, printCustomer: ƒ}
+    balance: 322222
+    id: 1002
+    name: "Tim"
+    printCustomer: ƒ ()
+    [[Prototype]]: Object
+    show: ƒ ()
+    constructor: ƒ Customer(id, name, balance)
+    [[Prototype]]: Object
+
 tim.show();
-VM2395:2 Id is 1002 Name Tim Balance 322222
-undefined
+Id is 1002 Name Tim Balance 322222
 
 tim.__proto__;
 {show: ƒ, constructor: ƒ}
 tim.__proto__ === Customer.prototype;
 true
 
-tim.__proto__.show;
+tim.__proto__.show;  // proven that it has show function reference
 ƒ (){
     console.log(`Id is ${this.id} Name ${this.name} Balance ${this.balance}`);
 }
 
-tim.__proto__.show();  // can't print values.... bcz values are with tim.
-VM2395:2 Id is undefined Name undefined Balance undefined
-undefined
+tim.__proto__.show();         // can't print values.... bcz values are with tim. not with __proto__
+Id is undefined Name undefined Balance undefined
+
 tom.show();    // internal working is tom.__proto__.show(); but that is printing undefined, bcz values are with tom
-VM2395:2 Id is 1001 Name Tom Balance 22222
-undefined
+Id is 1001 Name Tom Balance 22222
 
 
 // for maintaing the linkage of tom.show(); that was broken due to tom.__proto__.show();
 
 tom.__proto__.show.call(tom);
-VM2395:2 Id is 1001 Name Tom Balance 22222
-undefined
+Id is 1001 Name Tom Balance 22222
 
 tom.show(); // tom.__proto__.show.call(tom)
-VM2395:2 Id is 1001 Name Tom Balance 22222
-undefined
+Id is 1001 Name Tom Balance 22222
