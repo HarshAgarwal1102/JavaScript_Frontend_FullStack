@@ -126,21 +126,19 @@ VM607:1 Uncaught TypeError: Assignment to constant variable.      // we can't re
 (anonymous) @ VM607:1
 
 
-const obj = {id:1001, name:'Ram'};
-undefined
+const obj = {id:1001, name:'Ram'};       // this is shallow constant, bcz it has reference 
 obj.id++;      // This is possible because in obj reference is stored not the values. and we are only changing values instead of addresses.
 1001
 obj;
-{id: 1002, name: 'Ram'}
+{id: 1002, name: 'Ram'}             // no concept of deep constant
 
-obj = {};   // This is not possible because we are trying to change the constant address.
+obj = {};                // This is not possible because we are trying to change the address, that is constant.
 VM734:1 Uncaught TypeError: Assignment to constant variable.
     at <anonymous>:1:5
 (anonymous) @ VM734:1
 
 
 const arr = [10,20,30];
-undefined
 arr[0] = 1111;   // This is possible because in obj reference is stored not the values. and we are only changing values instead of addresses.
 1111
 arr;
