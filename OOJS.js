@@ -54,3 +54,52 @@ tim instanceof Object;
 true
 ram instanceof createEmp;     // this is a Generic Object
 false 
+
+
+
+// Prototypes 
+
+
+Employee.prototype;
+{constructor: ƒ}
+Array.prototype;
+[constructor: ƒ, at: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, …]
+Array.prototype.forEach;
+ƒ forEach() { [native code] }
+Array.prototype.map
+ƒ map() { [native code] }
+Array.prototype.find;
+ƒ find() { [native code] }
+typeof Array;
+'function'
+typeof Array.prototype;
+'object'
+arr;
+(3) [10, 20, 30]
+
+arr.__proto__;
+[constructor: ƒ, at: ƒ, concat: ƒ, copyWithin: ƒ, fill: ƒ, …]
+arr.__proto__ === Array.prototype;
+true
+Array.prototype.__proto__ === Object.prototype;
+true
+Employee;
+ƒ Employee(id, name, salary){
+    // this - keyword (Current Calling Object Reference)
+
+    this.id = id;
+    this.name = name;
+    this.salary = salary;  
+}
+var r = new Employee(1001, "R",9999);
+undefined
+r;
+Employee {id: 1001, name: 'R', salary: 9999}
+class Student{}
+undefined
+var s = new Student();
+undefined
+typeof s;
+'object'
+s instanceof Student;
+true
