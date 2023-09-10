@@ -132,5 +132,5 @@ Id is 1001 Name Tom Balance 22222
 tom.__proto__.show.call(tom);
 Id is 1001 Name Tom Balance 22222
 
-tom.show(); // tom.__proto__.show.call(tom)
+tom.show();   // equivalent to tom.__proto__.show.call(tom)
 Id is 1001 Name Tom Balance 22222
