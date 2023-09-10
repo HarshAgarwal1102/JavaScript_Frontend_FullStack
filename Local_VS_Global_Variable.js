@@ -1,7 +1,7 @@
-// function level scope
-undefined
+// Local Variable 
+
 function counter(){
-    var count = 0; // Local Variable
+    var count = 0; // Local Variable scope is Function level scope
     count++;
     return count;
 }
@@ -18,7 +18,9 @@ counter();
 1
 
 
-var count = 0; // Global Variable
+// Global Variable
+
+var count = 0;         // global scope
 function counter(){
     count++;
     return count;
@@ -42,6 +44,8 @@ counter();
 6
 window.count;
 6
+
+
 
 // Disadvantage of using global (we can change it).
 count = "AMIT";
