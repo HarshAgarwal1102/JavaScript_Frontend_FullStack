@@ -1,5 +1,6 @@
-// Generic Object
+// Object Oriented Java Script
 
+// Generic Object
 var obj = {id:101, name:'Ram', city:'Delhi'};   // Object Literal
 
 typeof obj;
