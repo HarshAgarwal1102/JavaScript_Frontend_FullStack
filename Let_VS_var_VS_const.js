@@ -8,15 +8,15 @@ function show(){
     }
     console.log(e);
 }
-undefined
+
 show();
-VM203:3 E is  undefined
-VM203:7 10
+E is  undefined
+10
 undefined
 
 function show(){
-     console.log("E is ", e); // undefined
-   var e = 20;
+    console.log("E is ", e); // undefined
+    var e = 20;
     console.log("E is ", e); // 20
     if(10>2){
         var e = 10; // e = 10;
@@ -25,14 +25,12 @@ function show(){
     var e  = 30;
     console.log(e); //30;
 }
-undefined
-show();
-VM272:2 E is  undefined
-VM272:4 E is  20
-VM272:7 E is  10
-VM272:10 30
-undefined
 
+show();
+E is  undefined
+E is  20
+E is  10
+30
 
 
 // LET
@@ -41,35 +39,36 @@ function show(){
      console.log("E is ", e); // Error
    
     if(10>2){
-        let e = 10; // e = 10;
+        let e = 10; // e = 10;               // here let has block scope, so can't able to do hoisting outside function
          console.log("E is ", e); // 10
     }
     
     console.log(e); //Error;
 }
-undefined
+
 show();
-VM325:2 Uncaught ReferenceError: e is not defined           // here let has block scope, so can't able to do hoisting outside function
+VM325:2 Uncaught ReferenceError: e is not defined         
     at show (<anonymous>:2:27)
     at <anonymous>:1:1
 show @ VM325:2
 (anonymous) @ VM346:1
 
 
+// ok so now try to acces it in function level.
+
 function show(){
-    if(10>2){
-        console.log("E is ", e); // Error
+    if(10>2){          // here, Hoisting is done inside the if statement but it wasn't initialized.
+        console.log("E is ", e);     // still this will give Error, bcz let jha par declare hota h hmesha uske niche se hi execution start krta hai.   
         let e = 10; // e = 10;
          console.log("E is ", e); // 10
     }
-    
     console.log(e); //Error;
 }
-undefined
+
 show();
 VM356:5 Uncaught ReferenceError: Cannot access 'e' before initialization  
-    at show (<anonymous>:5:30)        // here, Hoisting is done inside the if statement but it wasn't initialized.
-    at <anonymous>:1:1                  // let jha par declare hota h hmesha uske niche se hi execution start krta hai.
+    at show (<anonymous>:5:30)       
+    at <anonymous>:1:1                  
 show @ VM356:5
 (anonymous) @ VM378:1
 
@@ -83,23 +82,22 @@ function show(){
     }
     console.log(e);   // 20
 }
-undefined
+
 show();
-VM434:4 E is  20
-VM434:8 E is  10
-VM434:11 20
-undefined
+E is  20
+E is  10
+20
 
 
 function show(){
-       let e = 20;
-    console.log('E is ', e);
+    let e = 20;
+    console.log('E is ', e);   // 20
     if(10>2){
         let e = 10; // e = 10;
          console.log("E is ", e); // 10
     }
     let e = 100;
-    console.log(e); //Error;
+    console.log(e);   //Error, bcz of redeclaration
 }
 VM469:10 Uncaught SyntaxError: Identifier 'e' has already been declared    // re-declaration wasn't allowed.
 
