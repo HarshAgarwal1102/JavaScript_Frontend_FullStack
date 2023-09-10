@@ -14,6 +14,7 @@ var emp = {id:1001, name:'Tim'}
 var emp2 = {id:1002, name:'Vim'};
 
 
+// So we decided to create a function and use object literals..
 function createEmp(id, name , salary){
     var emp = {}; // Object Literal
     emp.id = id;
@@ -28,11 +29,13 @@ ram instanceof createEmp;      // not a specific object
 false
 ram instanceof Object;       // Object is GOD Function
 true
+// but the issue with this that the object created through this is not the specific object... Object is created through object literal
+
 
 
 // Specific Objects
 
-// Function Constructor
+// using Function Constructor
 function Person(id, name ,age){
     console.log('Person ',this);
     this.id = id;
