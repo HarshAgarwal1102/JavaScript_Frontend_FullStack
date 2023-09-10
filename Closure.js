@@ -27,8 +27,18 @@ t();
 t();
 5
 
-console.dir(t);
-ƒ counter()arguments: nullcaller: nulllength: 0name: "counter"prototype: {constructor: ƒ}[[FunctionLocation]]: VM53:3[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2]0: Closure (init) {count: 5}1: Global {window: Window, self: Window, document: document, name: '', location: Location, …}
+console.dir(t);      // to check whether that init is returning lexical scope also or not
+ƒ counter()
+   arguments: null
+   caller: null
+   length: 0
+   name: "counter"
+   prototype: {constructor: ƒ}
+      [[FunctionLocation]]: 
+      [[Prototype]]: ƒ ()
+      [[Scopes]]: Scopes[2]
+         0: Closure (init) {count: 5}         // lexical scope is also returned here...
+         1: Global {window: Window, self: Window, document: document, name: '', location: Location, …}
 
 function a(x){
     var g = 100;
@@ -54,9 +64,10 @@ console.dir(m);
       length: 1
       name: "c"
       prototype: {constructor: ƒ}
-      [[FunctionLocation]]: 4
-      [[Prototype]]: ƒ ()[[Scopes]]: Scopes[3]
-         0: Closure (b) {y: 20}
+      [[FunctionLocation]]: 
+      [[Prototype]]: ƒ ()
+      [[Scopes]]: Scopes[3]
+         0: Closure (b) {y: 20}         // proof that it is also returning lexical scope...
          1: Closure (a) {x: 10}
          2: Global {window: Window, self: Window, document: document, name: '', location: Location, …}
 
@@ -82,9 +93,9 @@ console.dir(g);
    ƒ anonymous(x)arguments: null
    caller: null
    length: 1
-      name: ""prototype: {constructor: ƒ}
-[[FunctionLocation]]: VM141:4
+   name: ""prototype: {constructor: ƒ}
+   [[FunctionLocation]]: VM141:4
    [[Prototype]]: ƒ ()
    [[Scopes]]: Scopes[2]
-   0: Closure (show) {y: 100}
-   1: Global {window: Window, self: Window, document: document, name: '', location: Location, …}
+      0: Closure (show) {y: 100}
+      1: Global {window: Window, self: Window, document: document, name: '', location: Location, …}
