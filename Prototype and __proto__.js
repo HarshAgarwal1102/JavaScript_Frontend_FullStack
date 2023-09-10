@@ -18,6 +18,8 @@ Customer {id: 1002, name: 'Tim', balance: 322222}
 kim;
 Customer {id: 1003, name: 'Kim', balance: 42222}
 
+
+
 function Customer(id, name, balance){
     this.id = id;
     this.name = name;
@@ -27,26 +29,31 @@ function Customer(id, name, balance){
     }
 }
 
-undefined
 var tom = new Customer(1001, 'Tom', 22222);
 var tim = new Customer(1002, 'Tim', 322222);
 var kim = new Customer(1003, 'Kim', 42222);
-undefined
+
+             // Problem with this is that now every object will have it's own printCustomer function...
+
 tom;
 Customer {id: 1001, name: 'Tom', balance: 22222, printCustomer: ƒ}
 tim
 Customer {id: 1002, name: 'Tim', balance: 322222, printCustomer: ƒ}
 kim;
 Customer {id: 1003, name: 'Kim', balance: 42222, printCustomer: ƒ}
+
 tom.printCustomer();
-VM1637:6 Id is 1001 Name Tom Balance 22222
-undefined
+Id is 1001 Name Tom Balance 22222
+
 tim.printCustomer();
-VM1637:6 Id is 1002 Name Tim Balance 322222
-undefined
+Id is 1002 Name Tim Balance 322222
+
 kim.printCustomer();
-VM1637:6 Id is 1003 Name Kim Balance 42222
-undefined
+Id is 1003 Name Kim Balance 42222
+
+
+// We can resolve this function with the help of prototype...
+
 Customer;
 ƒ Customer(id, name, balance){
     this.id = id;
@@ -58,6 +65,7 @@ Customer.prototype;
 {constructor: ƒ}
 typeof Customer.prototype;
 'object'
+
 Customer.prototype instanceof Object;
 true
 tom;
