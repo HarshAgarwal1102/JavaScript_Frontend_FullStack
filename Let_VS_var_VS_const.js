@@ -103,22 +103,21 @@ VM469:10 Uncaught SyntaxError: Identifier 'e' has already been declared    // re
 
 
 let rr = 100;
-undefined
-window.rr;    // we can't access let on window object because let jha par declare hota h hmesha uske niche se hi execution start krta hai.
-undefined
 
+window.rr;    // we can't access let on window object because let jha par declare hota h hmesha uske niche se hi execution start krta hai.
+undefined        // and window is on the top.
 
 
 // CONST 
 
 const MAX  = 100;
-undefined
-MAX++;      // we can't re-initialize const values.
-VM586:1 Uncaught TypeError: Assignment to constant variable.
+
+MAX++;     
+VM586:1 Uncaught TypeError: Assignment to constant variable.           // we can't increament constant values.
     at <anonymous>:1:4
 (anonymous) @ VM586:1
-MAX = 200;       // we can't re-initialize const values.
-VM607:1 Uncaught TypeError: Assignment to constant variable.
+MAX = 200;       
+VM607:1 Uncaught TypeError: Assignment to constant variable.      // we can't re-initialize constant values.
     at <anonymous>:1:5
 (anonymous) @ VM607:1
 
