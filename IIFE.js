@@ -1,11 +1,4 @@
-/*
-IIFE (Immediately Invoked Function Expression) OR (Self Invoking Function)
-
-USED because of 2 reasons.
-    1. When we don't want to recall the parent function for re-allocation.
-    2. This method is used before let. ()
-*/
-
+// IIFE (Immediately Invoked Function Expression) OR (Self Invoking Function)
 
 (function(){
     console.log("IIFE ");
@@ -13,8 +6,14 @@ USED because of 2 reasons.
 IIFE 
 
 
+/*
+USED because of 2 reasons.
+    1. When we don't want to recall the parent function for re-allocation.
+    2. This method is used before let. ()
+*/
 
-Why to use IIFE??
+
+// 1st reason...
 
 // ISSUE with closure is that if we recalled the init() then the value get reset.
 
@@ -52,6 +51,8 @@ t();
 
 // SOLUTION    Here we can use IIFE.
 
+// we removed the function name... so now there is no chance to recall the function...
+
 var g  = (function (){
 var count = 0; // Local Variable
 function counter(){
@@ -60,15 +61,15 @@ function counter(){
 }
     return counter;
 })();
-undefined
 
-g;
+g;     // here g contains returned function.
 ƒ counter(){
    // var count = 0; // Local Variable
     count++;
     return count;
     
 }
+
 g();
 1
 g();
@@ -79,7 +80,7 @@ g();
 4
 g();
 5
-g();
+g();         // now there is no way to resest the count value.
 6
 
 // Using VAR.
