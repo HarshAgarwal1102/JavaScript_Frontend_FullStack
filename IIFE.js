@@ -104,13 +104,13 @@ I is  6         // It's clear that there is no blocking scope of var.
 
 
 //  When let is there in ES6(2015).
-
+// let has block level scope, still hoisting is done.
 function scope(){
-    console.log(" i is ", i); // Error
+    console.log(" i is ", i);       // Error
     for(let i = 1; i<=5; i++){
         console.log("I is ", i);
     }
-    console.log("I is ", i); // Error
+    console.log("I is ", i);         // Error
 }
 
 scope();
