@@ -66,7 +66,8 @@ function show(){
 }
 
 //  still this will give Error, bcz let jha par declare hota h hmesha uske niche se hi execution start krta hai.
-//  anything that is declared in the function scope above the let , will be treated as TDZ (Temporal Dead zone)
+//  anything that is declared in the function scope above the let , will be treated as TDZ (Temporal Dead zone).
+//  variable declare to hota hai lekin initialize ni hota.. Undefined se bhi initialize ni hota. isliye memory m ni hota
 
 show();
 VM356:5 Uncaught ReferenceError: Cannot access 'e' before initialization  
