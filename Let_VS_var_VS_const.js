@@ -138,6 +138,9 @@ VM734:1 Uncaught TypeError: Assignment to constant variable.
 (anonymous) @ VM734:1
 
 
+            // JS doesn't support deep constant.
+
+
 const arr = [10,20,30];
 arr[0] = 1111;   // This is possible because in obj reference is stored not the values. and we are only changing values instead of addresses.
 1111
