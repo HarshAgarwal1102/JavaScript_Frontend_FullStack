@@ -12,12 +12,6 @@ function init(){
 }
 
 var t = init();
-t;
-ƒ counter(){
-   // var count = 0;      // Local Variable
-    count++;
-    return count;
-}
 
 t();
 1
@@ -83,11 +77,6 @@ function show(y){
     }
 }
 
-show(100);
-ƒ (x){
-        var a = 10;
-        return a + x + y; 
-    }
 var g = show(100);
 
 g(1);
@@ -100,5 +89,5 @@ console.dir(g);
    [[FunctionLocation]]: VM141:4
    [[Prototype]]: ƒ ()
    [[Scopes]]: Scopes[2]
-      0: Closure (show) {y: 100}
+      0: Closure (show) {y: 100}     // It only returns what it used from global scope
       1: Global {window: Window, self: Window, document: document, name: '', location: Location, …}
