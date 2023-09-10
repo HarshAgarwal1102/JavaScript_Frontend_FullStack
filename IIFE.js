@@ -1,5 +1,5 @@
 /*
-IIFE (Immediately Invoked Function Expression)
+IIFE (Immediately Invoked Function Expression) OR (Self Invoking Function)
 
 USED because of 2 reasons.
     1. When we don't want to recall the parent function for re-allocation.
