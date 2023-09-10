@@ -122,18 +122,18 @@ scope @ VM566:2
 
 
  
-// BEFORE LET we use IIFE
+// BEFORE LET we use IIFE   to get the feel of block level scope
 
 function scope(){
     console.log(" i is ", i); // Error
     (function(){
-    for(var i = 1; i<=5; i++){     // still hoisting is done but we have limited it in IIFE function call
+    for(var i = 1; i<=5; i++){       // still hoisting is done but we have limited it in IIFE function call
         console.log("I is ", i);
     }
     })();
     console.log("I is ", i); // Error
 }
-undefined
+
 scope();
 VM615:2 Uncaught ReferenceError: i is not defined
     at scope (<anonymous>:2:27)
