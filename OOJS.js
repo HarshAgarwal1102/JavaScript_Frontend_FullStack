@@ -1,7 +1,7 @@
 // Generic Object
 
 var obj = {id:101, name:'Ram', city:'Delhi'};   // Object Literal
-undefined
+
 typeof obj;
 'object'
 obj instanceof Object;      
@@ -15,23 +15,18 @@ function createEmp(id, name , salary){
     emp.salary = salary;
     return emp;
 }
-undefined
 var ram = createEmp(1001, 'Ram', 22222);
-undefined
-ram;
-{id: 1001, name: 'Ram', salary: 22222}
 typeof ram;
 'object'
-ram instanceof Object;
-true
-ram instanceof createEmp;    // not a specific object
+ram instanceof createEmp;      // not a specific object
 false
+ram instanceof Object;       // Object is GOD Function
+true
+
 var shyam = createEmp(1002, 'Shyam', 122222);
-undefined
 shyam;
 {id: 1002, name: 'Shyam', salary: 122222}
 var tom = createEmp(1003, 'Tom', 122222);
-undefined
 tom;
 {id: 1003, name: 'Tom', salary: 122222}
 
