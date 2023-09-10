@@ -1,5 +1,5 @@
 // Closures are an ability of a function to remember the variables and functions that are declared in its outer scope.
-// fn" return + lexical scope return => Closure 
+// fn" return + lexical scope return + used variables in Inner scope => Closure 
 
 function init(){
    var count = 0;       // Local Variable
