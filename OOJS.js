@@ -55,8 +55,8 @@ true
 ram instanceof createEmp;     // this is a Generic Object
 false 
 
-// what is prototype?
 
+// what is prototype?
 
 function Customer(id, name, balance){
     this.id = id;
