@@ -101,7 +101,7 @@ function show(){
          console.log("E is ", e); // 10
     }
     let e = 100;
-    console.log(e);   //Error, bcz of redeclaration
+    console.log(e);   //Error, bcz of redeclaration, mutliple declaration is only allowed in different scope
 }
 VM469:10 Uncaught SyntaxError: Identifier 'e' has already been declared    // re-declaration wasn't allowed.
 
