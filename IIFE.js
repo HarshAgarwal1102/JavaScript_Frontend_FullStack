@@ -1,14 +1,16 @@
-// IIFE (Immediately Invoked Function Expression)
+/*
+IIFE (Immediately Invoked Function Expression)
 
-// USED because of 2 reasons.
-    // 1. When we don't want to recall the parent function for re-allocation.
-    // 2. This method is used before let. ()
-undefined
+USED because of 2 reasons.
+    1. When we don't want to recall the parent function for re-allocation.
+    2. This method is used before let. ()
+*/
+
+
 (function(){
     console.log("IIFE ");
 })();                                       // ()();  // In 1st bracket function then 2nd bracket is the function call.
-VM98:2 IIFE 
-undefined
+IIFE 
 
 
 
@@ -23,9 +25,9 @@ function init(){
     }
     return counter;
 }
-undefined
+
 var t = init();
-undefined
+
 t();
 1
 t();
@@ -52,6 +54,7 @@ t();
 3
 
 // SOLUTION    Here we can use IIFE.
+
 var g  = (function (){
 var count = 0; // Local Variable
 function counter(){
