@@ -58,12 +58,15 @@ show @ VM325:2
 
 function show(){
     if(10>2){          // here, Hoisting is done inside the if statement but it wasn't initialized.
-        console.log("E is ", e);     // still this will give Error, bcz let jha par declare hota h hmesha uske niche se hi execution start krta hai.   
+        console.log("E is ", e);        
         let e = 10; // e = 10;
          console.log("E is ", e); // 10
     }
     console.log(e); //Error;
 }
+
+//  still this will give Error, bcz let jha par declare hota h hmesha uske niche se hi execution start krta hai.
+//  anything that is declared in the function scope above the let , will be treated as TDZ (Temporal Dead zone)
 
 show();
 VM356:5 Uncaught ReferenceError: Cannot access 'e' before initialization  
@@ -117,7 +120,7 @@ VM586:1 Uncaught TypeError: Assignment to constant variable.           // we can
     at <anonymous>:1:4
 (anonymous) @ VM586:1
 MAX = 200;       
-VM607:1 Uncaught TypeError: Assignment to constant variable.      // we can't re-initialize constant values.
+VM607:1 Uncaught TypeError: Assignment to constant variable.      // we can't re-declare constant values.
     at <anonymous>:1:5
 (anonymous) @ VM607:1
 
