@@ -52,7 +52,8 @@ tim instanceof Person;  // Specific Object
 true
 tim instanceof Object;
 true
-
+ram instanceof createEmp;     // this is a Generic Object
+false 
 
 // what is prototype?
 
