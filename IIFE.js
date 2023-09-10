@@ -16,7 +16,9 @@ IIFE
 
 Why to use IIFE??
 
-  // ISSUE
+// ISSUE with closure is that if we recalled the init() then the value get reset.
+
+    
 function init(){
     var count = 0; // Local Variable
     function counter(){
@@ -26,8 +28,7 @@ function init(){
     return counter;
 }
 
-var t = init();
-
+var t = init();     it's perfect here
 t();
 1
 t();
@@ -39,19 +40,15 @@ t();
 t();
 5
 
-t = init();   // When we recall this init function, the count value vanishes.  // this is the issue.
-ƒ counter(){
-   // var count = 0; // Local Variable
-    count++;
-    return count;
-    
-}
+t = init();   // When we recalled this init function, the count value vanishes.  // this is the issue.
+
 t();  // re allocation of count value.
 1
 t();
 2
 t();
 3
+
 
 // SOLUTION    Here we can use IIFE.
 
