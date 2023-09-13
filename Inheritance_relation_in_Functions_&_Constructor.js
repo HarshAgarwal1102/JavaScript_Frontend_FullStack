@@ -83,16 +83,16 @@ Employee.prototype.__proto__ == Person.prototype;  // Linkage created...
 true
 
 var amit =new Employee(1001, 'amit','delhi',222222,2222,'IT');
-VM1319:3  this is  Employee {}
-undefined
-amit;  // now we are Able to access both the functions...
+this is  Employee {}
+
+amit;               // now we are Able to access both the functions...
 Employee {id: 1001, name: 'amit', city: 'delhi', salary: 222222, bonus: 2222, …}
 amit.printEmployeeDetails();   // also able to access unique functions....
-VM1319:11 Salary 222222 Bonus 2222 Dept IT
-undefined
+Salary 222222 Bonus 2222 Dept IT
+
 amit.printPersonDetails();    // also able to access unique functions....
-VM642:8 Id 1001 Name amit City delhi
-undefined
+Id 1001 Name amit City delhi
+
 amit;
 Employee {id: 1001, name: 'amit', city: 'delhi', salary: 222222, bonus: 2222, …}
 
@@ -111,10 +111,9 @@ true
 // Problem is that we have to call both the functions...
 amit.printEmployeeDetails();
 Salary 222222 Bonus 2222 Dept IT
-undefined
+
 amit.printPersonDetails();
 Id 1001 Name amit City delhi
-undefined
 
 
 // Resolving issue...
@@ -130,15 +129,12 @@ Salary 222222 Bonus 2222 Dept IT
 
 
 
-
 /*
 
- 
 Ques.
 Create a Person Function , Having Id, Name, Age, City
 Create a Employee Function. Having Salary, Bonus, CompanyName
 Make a RelationShip b/w Employee and Person
-
 
 */
 
@@ -185,8 +181,8 @@ Employee.prototype;
 Person {constructor: ƒ, printEmployeeDetails: ƒ}
 Employee.prototype.__proto__ == Person.prototype;
 true
+
 var amit =new Employee(1001, 'amit','delhi',222222,2222,'IT');
-undefined
 amit;
 Employee {id: 1001, name: 'amit', city: 'delhi', salary: 222222, bonus: 2222, …}
 amit.printEmployeeDetails();
@@ -201,31 +197,27 @@ class Q{
         console.log("Q Show ");
     }
 }
-undefined
 Q.show();
-VM983:3 Q Show 
-undefined
+Q Show 
+
 typeof Q;
 'function'
 function T(){
     console.log("T ");
 }
-undefined
+
 T.show= function(){
     console.log("SHow ");
 }
-ƒ (){
-    console.log("SHow ");
-}
+
 T.show();
-VM1189:2 SHow 
-undefined
+SHow 
+
 var w = new Object();
-undefined
 w;
 {}
+
 var f = new Function();
-undefined
 f;
 ƒ anonymous(
 ) {
