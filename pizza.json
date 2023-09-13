@@ -267,7 +267,7 @@
         "id": 4,
         "name": "Blazing Onion & Paprika",
         "price": "179.99",
-        "menu_description": "Hot & spicy pizza with onion & red paprika toppings and a new spicy peri peri sauce on a Domino's cheesy base.",
+        "menu_description": "Hot & spicy pizza with onion & red paprika toppings and a new spicy peri peri sauce.",
         "classifications": {
           "vegetarian": true
         },
@@ -624,7 +624,7 @@
         "id": 8,
         "name": "Veggie Paradise",
         "price": "169.95",
-        "menu_description": "The awesome foursome! Golden corn, black olives, capsicum, red paprika",
+        "menu_description": "The awesome foursome! Golden corn, black olives, capsicum",
         "classifications": {
           "vegetarian": true
         },
