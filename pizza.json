@@ -1,7 +1,7 @@
 {
     "Vegetarian": [
          {
-        "id": 100,
+        "id": 1,
         "name": "Veg Deluxe",
         "price": "299.50",
         "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
@@ -89,7 +89,7 @@
       }
         ,
          {
-        "id": 10,
+        "id": 2,
         "name": "Vegan Veggie",
         "price": "179.99",
         "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
@@ -177,7 +177,7 @@
       }
         ,
       {
-        "id": 1000,
+        "id": 3,
         "name": "Vegan Pizza",
         "price": "239.95",
         "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
@@ -264,10 +264,10 @@
         ]
       },
          {
-        "id": 21,
-        "name": "Vegan Veggie",
+        "id": 4,
+        "name": "Blazing Onion & Paprika",
         "price": "179.99",
-        "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
+        "menu_description": "Hot & spicy pizza with onion & red paprika toppings and a new spicy peri peri sauce on a Domino's cheesy base.",
         "classifications": {
           "vegetarian": true
         },
@@ -351,10 +351,10 @@
         ]
       },
          {
-        "id": 31,
-        "name": "Vegan Veggie",
+        "id": 5,
+        "name": "Farmhouse",
         "price": "179.99",
-        "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
+        "menu_description": "Delightful combination of onion, capsicum, tomato & grilled mushroom",
         "classifications": {
           "vegetarian": true
         },
@@ -439,10 +439,10 @@
       }
         ,
          {
-        "id": 41,
-        "name": "Vegan Veggie",
+        "id": 6,
+        "name": "Peppy Paneer",
         "price": "179.99",
-        "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
+        "menu_description": "Flavorful trio of juicy paneer, crisp capsicum with spicy red paprika",
         "classifications": {
           "vegetarian": true
         },
@@ -526,10 +526,10 @@
         ]
       },
         {
-        "id": 11,
-        "name": "Veggie Supreme",
+        "id": 7,
+        "name": "Margherita",
         "price": "199.95",
-        "menu_description": "The freshest, locally sourced veggies",
+        "menu_description": "Classic delight with 100% real mozzarella cheese",
         "classifications": {
           "vegetarian": true
         },
@@ -621,10 +621,10 @@
         ]
       },
       {
-        "id": 12,
-        "name": "The O.G.",
+        "id": 8,
+        "name": "Veggie Paradise",
         "price": "169.95",
-        "menu_description": "The Margherita—with California flair",
+        "menu_description": "The awesome foursome! Golden corn, black olives, capsicum, red paprika",
         "classifications": {
           "vegetarian": true
         },
