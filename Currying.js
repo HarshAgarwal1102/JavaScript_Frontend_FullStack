@@ -20,7 +20,7 @@ var curriedMultiply = currying(multiply);
 multiply(4, 3); // Returns 12
 curriedMultiply(4)(3); // Also returns 12
 
-//As one can see in the code above, we have transformed the function multiply(a,b) to a function curriedMultiply , which takes in one parameter at a time.
+//As one can see in the code above, we have transformed the function multiply(a,b) to a function curriedMultiply, which takes in one parameter at a time.
 
 
 function mixVeg(oil){
