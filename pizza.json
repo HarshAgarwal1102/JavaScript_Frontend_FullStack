@@ -355,7 +355,7 @@
         "id": 5,
         "name": "Margherita",
         "price": "199.95",
-        "menu_description": "A classic Italian favorite, showcasing a harmonious trio of fresh tomato sauce, creamy mozzarella cheese, and aromatic basil leaves, all baked to perfection on a crisp, thin crust.",
+        "menu_description": "A classic Italian favorite, showcasing a harmonious trio of fresh tomato sauce, creamy mozzarella cheese.",
         "classifications": {
           "vegetarian": true
         },
