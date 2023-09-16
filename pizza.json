@@ -505,7 +505,7 @@
         "id": 7,
         "name": "Farmhouse Veggie",
         "price": "179.99",
-        "menu_description": "The Farmhouse pizza is a hearty classic with tomato sauce, bacon or ham, mushrooms, and onions.",
+        "menu_description": "The Farmhouse pizza is a hearty classic with tomato sauce, bacon, mushrooms, and onions.",
         "classifications": {
           "vegetarian": true
         },
