@@ -4,9 +4,10 @@
         "id": 1,
         "name": "Veg Deluxe",
         "price": "299.50",
-        "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
+        "menu_description": "The Veg Deluxe pizza is a colorful and flavorful vegetarian option, featuring a tomato sauce base, a medley of fresh vegetables, and a cheesy finish on a classic crust.",
         "classifications": {
           "vegetarian": true
+         
         },
         "assets": {
           "menu": [
@@ -92,7 +93,7 @@
         "id": 2,
         "name": "Vegan Veggie",
         "price": "179.99",
-        "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
+        "menu_description": "The Vegan Veggie pizza is a plant-based delight, showcasing a tomato sauce-covered crust piled high with an assortment of fresh vegetables.",
         "classifications": {
           "vegetarian": true
         },
@@ -180,7 +181,7 @@
         "id": 3,
         "name": "Vegan Pizza",
         "price": "239.95",
-        "menu_description": "Daiya vegan mozzarella, paired with fresh veggies",
+        "menu_description": "The Vegan Pizza is a cruelty-free delight, featuring a tomato sauce base, an assortment of veggies, and dairy-free cheese on a plant-based crust.",
         "classifications": {
           "vegetarian": true
         },
@@ -267,7 +268,7 @@
         "id": 4,
         "name": "Blazing Onion & Paprika",
         "price": "179.99",
-        "menu_description": "Hot & spicy pizza with onion & red paprika toppings and a new spicy peri peri sauce.",
+        "menu_description": "Blazing Onion & Paprika is a fiery and smoky flavor duo, perfect for adding a spicy and bold kick to your dishes.",
         "classifications": {
           "vegetarian": true
         },
@@ -280,181 +281,6 @@
           "product_details_page": [
             {
               "url": "https://halalrun.com/wp-content/uploads/2023/08/Farmhouse-Pizza-435-Oxford-Road-Reading-Berkshire-RG30-1HD-food1.jpg"
-            }
-          ]
-        },
-        "toppings": [
-          {
-            "id": 50,
-            "name": "Baby Bell Peppers",
-            "description": null,
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/7650vx0h.png"
-            }
-          },
-          {
-            "id": 6,
-            "name": "Basil",
-            "description": null,
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/9pb5d2k4.png"
-            }
-          },
-          {
-            "id": 110,
-            "name": "Daiya Vegan Mozzarella",
-            "description": "FILTERED WATER, TAPIOCA FLOUR, EXPELLER PRESSED NON-GMO CANOLA AND/OR SAFFLOWER OIL, COCONUT OIL, PEA PROTEIN, SALT, VEGAN NATURAL FLAVOURS, INACTIVE YEAST, VEGETABLE GLYCERIN, XANTHAN GUM, CITRIC ACID, TITANIUM DIOXIDE",
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/oo9dpuia.png"
-            }
-          },
-          {
-            "id": 74,
-            "name": "Kalamata Olives",
-            "description": "KALAMATA OLIVES, WATER, SEA SALT, SUNFLOWER OIL",
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/ezuum3ch.png"
-            }
-          },
-          {
-            "id": 2,
-            "name": "Oregano",
-            "description": null,
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/1dlixxge.png"
-            }
-          },
-          {
-            "id": 75,
-            "name": "Red Onions",
-            "description": null,
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/j8cy3gh3.png"
-            }
-          },
-          {
-            "id": 26,
-            "name": "Roasted Garlic",
-            "description": "PEELED GARLIC, CANOLA OIL",
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/s4o6jsl6.png"
-            }
-          },
-          {
-            "id": 1,
-            "name": "Tomato Sauce",
-            "description": "VINE-RIPENED TOMATOES, FRESH BASIL LEAF, SALT, CALCIUM CHLORIDE, NATURALLY DERIVED CITRIC ACID, EXTRA VIRGIN OLIVE OIL, SEA SALT",
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/3i572qur.png"
-            }
-          }
-        ]
-      },
-         {
-        "id": 5,
-        "name": "Farmhouse",
-        "price": "179.99",
-        "menu_description": "Delightful combination of onion, capsicum, tomato & grilled mushroom",
-        "classifications": {
-          "vegetarian": true
-        },
-        "assets": {
-          "menu": [
-            {
-              "url": "https://lh3.googleusercontent.com/FpfPEYQeozOnw0M948shRurR21tjWaV0zq7r3EKTYQWzqc8A2dqMPW6ljtPl2AXkdP5giurzIfDmR8wCGWjiyeas-P67FArx_XkcEek=w512-rw"
-            }
-          ],
-          "product_details_page": [
-            {
-              "url": "https://lh3.googleusercontent.com/FpfPEYQeozOnw0M948shRurR21tjWaV0zq7r3EKTYQWzqc8A2dqMPW6ljtPl2AXkdP5giurzIfDmR8wCGWjiyeas-P67FArx_XkcEek=w512-rw"
-            }
-          ]
-        },
-        "toppings": [
-          {
-            "id": 50,
-            "name": "Baby Bell Peppers",
-            "description": null,
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/7650vx0h.png"
-            }
-          },
-          {
-            "id": 6,
-            "name": "Basil",
-            "description": null,
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/9pb5d2k4.png"
-            }
-          },
-          {
-            "id": 110,
-            "name": "Daiya Vegan Mozzarella",
-            "description": "FILTERED WATER, TAPIOCA FLOUR, EXPELLER PRESSED NON-GMO CANOLA AND/OR SAFFLOWER OIL, COCONUT OIL, PEA PROTEIN, SALT, VEGAN NATURAL FLAVOURS, INACTIVE YEAST, VEGETABLE GLYCERIN, XANTHAN GUM, CITRIC ACID, TITANIUM DIOXIDE",
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/oo9dpuia.png"
-            }
-          },
-          {
-            "id": 74,
-            "name": "Kalamata Olives",
-            "description": "KALAMATA OLIVES, WATER, SEA SALT, SUNFLOWER OIL",
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/ezuum3ch.png"
-            }
-          },
-          {
-            "id": 2,
-            "name": "Oregano",
-            "description": null,
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/1dlixxge.png"
-            }
-          },
-          {
-            "id": 75,
-            "name": "Red Onions",
-            "description": null,
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/j8cy3gh3.png"
-            }
-          },
-          {
-            "id": 26,
-            "name": "Roasted Garlic",
-            "description": "PEELED GARLIC, CANOLA OIL",
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/s4o6jsl6.png"
-            }
-          },
-          {
-            "id": 1,
-            "name": "Tomato Sauce",
-            "description": "VINE-RIPENED TOMATOES, FRESH BASIL LEAF, SALT, CALCIUM CHLORIDE, NATURALLY DERIVED CITRIC ACID, EXTRA VIRGIN OLIVE OIL, SEA SALT",
-            "asset": {
-              "url": "https://assets.zumepizza.com/public/3i572qur.png"
-            }
-          }
-        ]
-      }
-        ,
-         {
-        "id": 6,
-        "name": "Peppy Paneer",
-        "price": "179.99",
-        "menu_description": "Flavorful trio of juicy paneer, crisp capsicum with spicy red paprika",
-        "classifications": {
-          "vegetarian": true
-        },
-        "assets": {
-          "menu": [
-            {
-              "url": "https://i0.wp.com/www.dominosoffer.co.in/wp-content/uploads/2021/03/Dominos-peppy-paneer-pizza.jpg?fit=800%2C450&ssl=1"
-            }
-          ],
-          "product_details_page": [
-            {
-              "url": "https://i0.wp.com/www.dominosoffer.co.in/wp-content/uploads/2021/03/Dominos-peppy-paneer-pizza.jpg?fit=800%2C450&ssl=1"
             }
           ]
         },
@@ -526,10 +352,10 @@
         ]
       },
         {
-        "id": 7,
+        "id": 5,
         "name": "Margherita",
         "price": "199.95",
-        "menu_description": "Classic delight with 100% real mozzarella cheese",
+        "menu_description": "A classic Italian favorite, showcasing a harmonious trio of fresh tomato sauce, creamy mozzarella cheese, and aromatic basil leaves, all baked to perfection on a crisp, thin crust.",
         "classifications": {
           "vegetarian": true
         },
@@ -620,11 +446,185 @@
           }
         ]
       },
+        {
+        "id": 6,
+        "name": "Peppy Paneer",
+        "price": "179.99",
+        "menu_description": "Paneer Pepper is a zesty Indian delight with spicy paneer cheese and colorful bell peppers in a flavorful sauce.",
+        "classifications": {
+          "vegetarian": true
+        },
+        "assets": {
+          "menu": [
+            {
+              "url": "https://i0.wp.com/www.dominosoffer.co.in/wp-content/uploads/2021/03/Dominos-peppy-paneer-pizza.jpg?fit=800%2C450&ssl=1"
+            }
+          ],
+          "product_details_page": [
+            {
+              "url": "https://i0.wp.com/www.dominosoffer.co.in/wp-content/uploads/2021/03/Dominos-peppy-paneer-pizza.jpg?fit=800%2C450&ssl=1"
+            }
+          ]
+        },
+        "toppings": [
+          {
+            "id": 50,
+            "name": "Baby Bell Peppers",
+            "description": null,
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/7650vx0h.png"
+            }
+          },
+          {
+            "id": 6,
+            "name": "Basil",
+            "description": null,
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/9pb5d2k4.png"
+            }
+          },
+          {
+            "id": 110,
+            "name": "Daiya Vegan Mozzarella",
+            "description": "FILTERED WATER, TAPIOCA FLOUR, EXPELLER PRESSED NON-GMO CANOLA AND/OR SAFFLOWER OIL, COCONUT OIL, PEA PROTEIN, SALT, VEGAN NATURAL FLAVOURS, INACTIVE YEAST, VEGETABLE GLYCERIN, XANTHAN GUM, CITRIC ACID, TITANIUM DIOXIDE",
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/oo9dpuia.png"
+            }
+          },
+          {
+            "id": 74,
+            "name": "Kalamata Olives",
+            "description": "KALAMATA OLIVES, WATER, SEA SALT, SUNFLOWER OIL",
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/ezuum3ch.png"
+            }
+          },
+          {
+            "id": 2,
+            "name": "Oregano",
+            "description": null,
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/1dlixxge.png"
+            }
+          },
+          {
+            "id": 75,
+            "name": "Red Onions",
+            "description": null,
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/j8cy3gh3.png"
+            }
+          },
+          {
+            "id": 26,
+            "name": "Roasted Garlic",
+            "description": "PEELED GARLIC, CANOLA OIL",
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/s4o6jsl6.png"
+            }
+          },
+          {
+            "id": 1,
+            "name": "Tomato Sauce",
+            "description": "VINE-RIPENED TOMATOES, FRESH BASIL LEAF, SALT, CALCIUM CHLORIDE, NATURALLY DERIVED CITRIC ACID, EXTRA VIRGIN OLIVE OIL, SEA SALT",
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/3i572qur.png"
+            }
+          }
+        ]
+      },
+    {
+        "id": 7,
+        "name": "Farmhouse Veggie",
+        "price": "179.99",
+        "menu_description": "The Farmhouse pizza is a hearty classic with tomato sauce, bacon or ham, mushrooms, and onions.",
+        "classifications": {
+          "vegetarian": true
+        },
+        "assets": {
+          "menu": [
+            {
+              "url": "https://lh3.googleusercontent.com/FpfPEYQeozOnw0M948shRurR21tjWaV0zq7r3EKTYQWzqc8A2dqMPW6ljtPl2AXkdP5giurzIfDmR8wCGWjiyeas-P67FArx_XkcEek=w512-rw"
+            }
+          ],
+          "product_details_page": [
+            {
+              "url": "https://lh3.googleusercontent.com/FpfPEYQeozOnw0M948shRurR21tjWaV0zq7r3EKTYQWzqc8A2dqMPW6ljtPl2AXkdP5giurzIfDmR8wCGWjiyeas-P67FArx_XkcEek=w512-rw"
+            }
+          ]
+        },
+        "toppings": [
+          {
+            "id": 50,
+            "name": "Baby Bell Peppers",
+            "description": null,
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/7650vx0h.png"
+            }
+          },
+          {
+            "id": 6,
+            "name": "Basil",
+            "description": null,
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/9pb5d2k4.png"
+            }
+          },
+          {
+            "id": 110,
+            "name": "Daiya Vegan Mozzarella",
+            "description": "FILTERED WATER, TAPIOCA FLOUR, EXPELLER PRESSED NON-GMO CANOLA AND/OR SAFFLOWER OIL, COCONUT OIL, PEA PROTEIN, SALT, VEGAN NATURAL FLAVOURS, INACTIVE YEAST, VEGETABLE GLYCERIN, XANTHAN GUM, CITRIC ACID, TITANIUM DIOXIDE",
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/oo9dpuia.png"
+            }
+          },
+          {
+            "id": 74,
+            "name": "Kalamata Olives",
+            "description": "KALAMATA OLIVES, WATER, SEA SALT, SUNFLOWER OIL",
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/ezuum3ch.png"
+            }
+          },
+          {
+            "id": 2,
+            "name": "Oregano",
+            "description": null,
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/1dlixxge.png"
+            }
+          },
+          {
+            "id": 75,
+            "name": "Red Onions",
+            "description": null,
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/j8cy3gh3.png"
+            }
+          },
+          {
+            "id": 26,
+            "name": "Roasted Garlic",
+            "description": "PEELED GARLIC, CANOLA OIL",
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/s4o6jsl6.png"
+            }
+          },
+          {
+            "id": 1,
+            "name": "Tomato Sauce",
+            "description": "VINE-RIPENED TOMATOES, FRESH BASIL LEAF, SALT, CALCIUM CHLORIDE, NATURALLY DERIVED CITRIC ACID, EXTRA VIRGIN OLIVE OIL, SEA SALT",
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/3i572qur.png"
+            }
+          }
+        ]
+      },
       {
         "id": 8,
         "name": "Veggie Paradise",
         "price": "169.95",
-        "menu_description": "The awesome foursome! Golden corn, black olives, capsicum",
+        "menu_description": " A colorful medley of fresh vegetables and tangy tomato sauce, topped with a blanket of melted cheese, creating a symphony of flavors and textures in every bite. ",
         "classifications": {
           "vegetarian": true
         },
@@ -674,6 +674,62 @@
             }
           }
         ]
+      },
+         {
+        "id": 17,
+        "name": "Mexican Fiesta",
+        "price": "18.95",
+        "menu_description": "Mexican Fiesta pizza: A spicy and festive blend of flavors with salsa, seasoned protein, black beans, and jalapeños on a tomato base.",
+        "classifications": {
+          "vegetarian": true
+        },
+        "assets": {
+          "menu": [
+            {
+              "url": "https://assets.zumepizza.com/public/u9uqpymh.jpg"
+            }
+          ],
+          "product_details_page": [
+            {
+              "url": "https://api.pizzahut.io/v1/content/en-in/in-1/images/pizza/mexican-fiesta.559a1961ca021b8fb90367c6918e50f1.1.jpg"
+            }
+          ]
+        },
+        "toppings": [
+          {
+            "id": 6,
+            "name": "Basil",
+            "description": null,
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/9pb5d2k4.png"
+            }
+          },
+          {
+            "id": 5,
+            "name": "Mozzarella",
+            "description": "PASTEURIZED MILK, CHEESE CULTURE, SALT, ENZYMES",
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/rv3erpfq.png"
+            }
+          },
+          {
+            "id": 2,
+            "name": "Oregano",
+            "description": null,
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/1dlixxge.png"
+            }
+          },
+          {
+            "id": 1,
+            "name": "Tomato Sauce",
+            "description": "VINE-RIPENED TOMATOES, FRESH BASIL LEAF, SALT, CALCIUM CHLORIDE, NATURALLY DERIVED CITRIC ACID, EXTRA VIRGIN OLIVE OIL, SEA SALT",
+            "asset": {
+              "url": "https://assets.zumepizza.com/public/3i572qur.png"
+            }
+          }
+        ]
       }
+        
     ]
 }
