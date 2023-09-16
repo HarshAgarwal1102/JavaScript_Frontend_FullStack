@@ -679,7 +679,7 @@
         "id": 9,
         "name": "Mexican Fiesta",
         "price": "18.95",
-        "menu_description": "Mexican Fiesta pizza: A spicy and festive blend of flavors with salsa, seasoned protein, black beans, and jalapeños on a tomato base.",
+        "menu_description": "Mexican Fiesta pizza: A spicy and festive blend of flavors with salsa.",
         "classifications": {
           "vegetarian": true
         },
