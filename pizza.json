@@ -4,7 +4,7 @@
         "id": 1,
         "name": "Veg Deluxe",
         "price": "299.50",
-        "menu_description": "The Veg Deluxe pizza is a colorful and flavorful vegetarian option, featuring a tomato sauce base, a medley of fresh vegetables, and a cheesy finish on a classic crust.",
+        "menu_description": "The Veg Deluxe pizza is a colorful and flavorful vegetarian option, a medley of fresh vegetables, and a cheesy finish on a classic crust.",
         "classifications": {
           "vegetarian": true
          
