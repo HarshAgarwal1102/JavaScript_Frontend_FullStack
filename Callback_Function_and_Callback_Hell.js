@@ -16,7 +16,6 @@ mainFunction(callbackFunction);
 
 
 
-
 function divideByHalf(sum){
   console.log(Math.floor(sum / 2));
 }
