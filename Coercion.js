@@ -1,5 +1,5 @@
 // What is Coercion ?
-// Dynamically typed language used Coercion for Typecasting...
+// Dynamically typed language use Coercion for Typecasting...
 
 
 /*
