@@ -39,7 +39,7 @@ var x = 10;
 undefined
 var y = 20;
 undefined
-"X is "+x+" and Y is "+y;
+"X is "+x+" and Y is "+y;       // in this simple string we need to take care for all the double quotes to be closed properly
 'X is 10 and Y is 20'
 `X is ${x} and Y is ${y}`;        // this is string interpolation, it simplifies the way of writing -> just use backtick(`) and ${} then it will print the values
 'X is 10 and Y is 20'
