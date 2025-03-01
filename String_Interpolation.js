@@ -44,11 +44,16 @@ undefined
 `X is ${x} and Y is ${y}`;        // this is string interpolation, it simplifies the way of writing -> just use backtick(`) and ${} then it will print the values
 'X is 10 and Y is 20'
 
+
+
+
+
+// About booleans , 
 var t = true;
 undefined
-true + true;
+true + true;  // true is treated as 1   ->    1+1 = 2
 2
-true  + false;
+true  + false;    // false is treated as 0   ->    1+0 = 1
 1
 100 + true;
 101
