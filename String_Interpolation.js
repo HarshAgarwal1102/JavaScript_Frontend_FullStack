@@ -28,13 +28,13 @@ a = `gjdfkghkdjfgjkdf
 fjhdsjkgdf
 gjhdfkj
 ghsdkj`;
-'gjdfkghkdjfgjkdf\nfjhdsjkgdf\ngjhdfkj\nghsdkj'
+
 console.log(a);          // Multiline 
 gjdfkghkdjfgjkdf
 fjhdsjkgdf
 gjhdfkj
 ghsdkj
-undefined
+
 var x = 10;
 undefined
 var y = 20;
